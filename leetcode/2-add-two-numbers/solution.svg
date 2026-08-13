@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
+  <!-- Background -->
+  <rect x="0" y="0" width="560" height="300" rx="10" fill="#0b1310" stroke="#24382c"/>
+  
+  <!-- Definitions for arrowhead (not used, kept for completeness) -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#f5b942"/>
+    </marker>
+  </defs>
+  
+  <!-- Linked list L1 -->
+  <g id="list1">
+    <rect x="80" y="80" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="95" y="103" font-family="monospace" font-size="16" fill="#e9f4ec" text-anchor="middle">2</text>
+    <rect x="120" y="80" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="135" y="103" font-family="monospace" font-size="16" fill="#e9f4ec" text-anchor="middle">4</text>
+    <rect x="160" y="80" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="175" y="103" font-family="monospace" font-size="16" fill="#e9f4ec" text-anchor="middle">3</text>
+  </g>
+  
+  <!-- Linked list L2 -->
+  <g id="list2">
+    <rect x="80" y="160" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="95" y="183" font-family="monospace" font-size="16" fill="#e9f4ec" text-anchor="middle">5</text>
+    <rect x="120" y="160" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="135" y="183" font-family="monospace" font-size="16" fill="#e9f4ec" text-anchor="middle">6</text>
+    <rect x="160" y="160" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="175" y="183" font-family="monospace" font-size="16" fill="#e9f4ec" text-anchor="middle">4</text>
+  </g>
+  
+  <!-- Pointer for L1 -->
+  <g id="ptr1">
+    <text x="0" y="0" font-family="monospace" font-size="14" fill="#f5b942" text-anchor="middle">▲</text>
+    <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite" values="95 60; 135 60; 175 60; 215 60" keyTimes="0;0.25;0.5;0.75" calcMode="discrete"/>
+  </g>
+  
+  <!-- Pointer for L2 -->
+  <g id="ptr2">
+    <text x="0" y="0" font-family="monospace" font-size="14" fill="#f5b942" text-anchor="middle">▲</text>
+    <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite" values="95 140; 135 140; 175 140; 215 140" keyTimes="0;0.25;0.5;0.75" calcMode="discrete"/>
+  </g>
+  
+  <!-- Step 1 -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;1;0" keyTimes="0;0.125;0.25" calcMode="discrete"/>
+    <!-- Highlight active nodes -->
+    <rect x="80" y="80" width="30" height="30" fill="none" stroke="#3fae5e"/>
+    <rect x="80" y="160" width="30" height="30" fill="none" stroke="#3fae5e"/>
+    <!-- Caption -->
+    <text x="280" y="50" font-family="monospace" font-size="14" fill="#f5b942" text-anchor="middle">
+      Add 2 + 5 = 7, carry 0
+    </text>
+    <!-- Result node 7 -->
+    <rect x="80" y="240" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="95" y="263" font-family="monospace" font-size="16" fill="#63d488" text-anchor="middle">7</text>
+  </g>
+  
+  <!-- Step 2 -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;1;0" keyTimes="0.25;0.375;0.5" calcMode="discrete"/>
+    <!-- Highlight active nodes -->
+    <rect x="120" y="80" width="30" height="30" fill="none" stroke="#3fae5e"/>
+    <rect x="120" y="160" width="30" height="30" fill="none" stroke="#3fae5e"/>
+    <!-- Caption -->
+    <text x="280" y="50" font-family="monospace" font-size="14" fill="#f5b942" text-anchor="middle">
+      Add 4 + 6 + 0 = 10, write 0, carry 1
+    </text>
+    <!-- Result node 0 -->
+    <rect x="120" y="240" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="135" y="263" font-family="monospace" font-size="16" fill="#63d488" text-anchor="middle">0</text>
+  </g>
+  
+  <!-- Step 3 -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;1;0" keyTimes="0.5;0.625;0.75" calcMode="discrete"/>
+    <!-- Highlight active nodes -->
+    <rect x="160" y="80" width="30" height="30" fill="none" stroke="#3fae5e"/>
+    <rect x="160" y="160" width="30" height="30" fill="none" stroke="#3fae5e"/>
+    <!-- Caption -->
+    <text x="280" y="50" font-family="monospace" font-size="14" fill="#f5b942" text-anchor="middle">
+      Add 3 + 4 + 1 = 8, write 8, carry 0
+    </text>
+    <!-- Result node 8 -->
+    <rect x="160" y="240" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="175" y="263" font-family="monospace" font-size="16" fill="#63d488" text-anchor="middle">8</text>
+  </g>
+  
+  <!-- Step 4 – Final Result -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" values="0;1;0" keyTimes="0.75;0.875;1" calcMode="discrete"/>
+    <!-- Caption -->
+    <text x="280" y="50" font-family="monospace" font-size="14" fill="#f5b942" text-anchor="middle">
+      Result: 7 → 0 → 8
+    </text>
+    <!-- Full result list (static for this step) -->
+    <rect x="80" y="240" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="95" y="263" font-family="monospace" font-size="16" fill="#63d488" text-anchor="middle">7</text>
+    <rect x="120" y="240" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="135" y="263" font-family="monospace" font-size="16" fill="#63d488" text-anchor="middle">0</text>
+    <rect x="160" y="240" width="30" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="175" y="263" font-family="monospace" font-size="16" fill="#63d488" text-anchor="middle">8</text>
+  </g>
+</svg>

@@ -8,8 +8,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — single pass through both lists
+- **Space:** O(n) — result list (plus dummy node)
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
