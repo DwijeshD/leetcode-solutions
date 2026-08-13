@@ -8,8 +8,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — each digit is compared at most once
+- **Space:** O(n) — integer is converted to a string of length n
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 

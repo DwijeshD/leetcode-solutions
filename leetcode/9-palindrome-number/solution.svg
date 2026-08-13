@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
+  <defs>
+    <marker id="arrowDown" markerWidth="6" markerHeight="6" refX="3" refY="0" orient="auto">
+      <path d="M0,0 L3,4 L6,0" fill="#f5b942"/>
+    </marker>
+    <marker id="arrowUp" markerWidth="6" markerHeight="6" refX="3" refY="4" orient="auto">
+      <path d="M0,4 L3,0 L6,4" fill="#f5b942"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="560" height="300" fill="#0b1310" stroke="#24382c" rx="10"/>
+
+  <!-- Data row (string representation of 121) -->
+  <g id="dataRow" font-family="monospace" font-size="20" fill="#e9f4ec">
+    <!-- Cell 0 -->
+    <rect x="150" y="130" width="50" height="40" fill="#1a2820" stroke="#24382c"/>
+    <text x="175" y="158" text-anchor="middle">1</text>
+    <!-- Cell 1 -->
+    <rect x="210" y="130" width="50" height="40" fill="#1a2820" stroke="#24382c"/>
+    <text x="235" y="158" text-anchor="middle">2</text>
+    <!-- Cell 2 -->
+    <rect x="270" y="130" width="50" height="40" fill="#1a2820" stroke="#24382c"/>
+    <text x="295" y="158" text-anchor="middle">1</text>
+  </g>
+
+  <!-- Left pointer (down arrow) -->
+  <g id="leftPtr" fill="none" stroke="#f5b942" stroke-width="2">
+    <polygon points="-5,-10 5,-10 0,0" marker-end="url(#arrowDown)"/>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="150,120;210,120;210,120" keyTimes="0;0.33;0.66" dur="8s" repeatCount="indefinite"/>
+    <text x="0" y="30" text-anchor="middle" fill="#f5b942">left</text>
+    <animate attributeName="opacity" values="1;0;0" keyTimes="0;0.33;0.66" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Right pointer (up arrow) stays on column 2 -->
+  <g id="rightPtr" fill="none" stroke="#f5b942" stroke-width="2">
+    <polygon points="-5,0 5,0 0,-10" marker-end="url(#arrowUp)"/>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="270,170;270,170;270,170" keyTimes="0;0.33;0.66" dur="8s" repeatCount="indefinite"/>
+    <text x="0" y="-30" text-anchor="middle" fill="#f5b942">right</text>
+    <animate attributeName="opacity" values="1;1;1" keyTimes="0;0.33;0.66" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Step 0: initial state -->
+  <g opacity="0">
+    <text x="280" y="80" fill="#f5b942" text-anchor="middle" font-size="16">Initialize left=0, right=2</text>
+    <animate attributeName="opacity" values="1;0;0" keyTimes="0;0.33;0.66" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Step 1: first comparison (indices 0 and 2) -->
+  <g opacity="0">
+    <text x="280" y="80" fill="#f5b942" text-anchor="middle" font-size="16">Compare num[0] (1) vs num[2] (1) – equal</text>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.33;0.66" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Step 2: second comparison (indices 1 and 2) -->
+  <g opacity="0">
+    <text x="280" y="80" fill="#f5b942" text-anchor="middle" font-size="16">Compare num[1] (2) vs num[2] (1) – mismatch</text>
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.66;1" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Final result (false) -->
+  <g opacity="0">
+    <text x="280" y="240" fill="#63d488" text-anchor="middle" font-size="24" font-weight="bold">Result: false</text>
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.66;1" dur="8s" repeatCount="indefinite"/>
+  </g>
+</svg>
