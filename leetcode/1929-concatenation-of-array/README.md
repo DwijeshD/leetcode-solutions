@@ -9,8 +9,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — one pass concatenates the two arrays
+- **Space:** O(n) — creates a new list of length 2n
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
