@@ -9,8 +9,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — single pass copies each element twice
+- **Space:** O(n) — creates a new array of size 2 n
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 

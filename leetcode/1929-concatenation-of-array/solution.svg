@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
+  <!-- Background -->
+  <rect x="0" y="0" width="560" height="300" fill="#0b1310" stroke="#24382c" rx="10"/>
+
+  <!-- Definitions (none needed) -->
+
+  <!-- STEP 1 – show original nums -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.125;0.25" dur="8s" repeatCount="indefinite"/>
+    <!-- label -->
+    <text x="20" y="70" fill="#e9f4ec" font-family="monospace" font-size="14">nums</text>
+    <!-- nums cells -->
+    <g>
+      <rect x="80" y="80" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <text x="100" y="100" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">1</text>
+
+      <rect x="125" y="80" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <text x="145" y="100" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">2</text>
+
+      <rect x="170" y="80" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <text x="190" y="100" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">1</text>
+    </g>
+    <!-- caption -->
+    <text x="300" y="70" fill="#f5b942" font-family="monospace" font-size="14">Step 1: original array</text>
+  </g>
+
+  <!-- STEP 2 – empty ans array -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0.25;0.375;0.5" dur="8s" repeatCount="indefinite"/>
+    <!-- label -->
+    <text x="20" y="150" fill="#e9f4ec" font-family="monospace" font-size="14">ans</text>
+    <!-- empty ans cells (just boxes) -->
+    <g>
+      <!-- 6 boxes -->
+      <rect x="80" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <rect x="125" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <rect x="170" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <rect x="215" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <rect x="260" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <rect x="305" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+    </g>
+    <!-- caption -->
+    <text x="300" y="150" fill="#f5b942" font-family="monospace" font-size="14">Step 2: allocate ans (empty)</text>
+  </g>
+
+  <!-- STEP 3 – first half filled -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0.5;0.625;0.75" dur="8s" repeatCount="indefinite"/>
+    <!-- label -->
+    <text x="20" y="150" fill="#e9f4ec" font-family="monospace" font-size="14">ans</text>
+    <g>
+      <!-- first three cells filled -->
+      <rect x="80" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="100" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">1</text>
+
+      <rect x="125" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="145" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">2</text>
+
+      <rect x="170" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="190" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">1</text>
+
+      <!-- remaining three cells empty -->
+      <rect x="215" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <rect x="260" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+      <rect x="305" y="150" width="40" height="40" fill="#1a2820" stroke="#24382c"/>
+    </g>
+    <!-- pointer moving across first half -->
+    <g transform="translate(100,130)">
+      <polygon points="-8,-12 8,-12 0,0" fill="#f5b942"/>
+      <animateTransform attributeName="transform" type="translate" values="100,130;145,130;190,130;190,130" keyTimes="0;0.5625;0.6875;0.75" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </g>
+    <!-- caption -->
+    <text x="300" y="210" fill="#f5b942" font-family="monospace" font-size="14">Step 3: copy first half</text>
+  </g>
+
+  <!-- STEP 4 – full ans filled -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0.75;0.875;1" dur="8s" repeatCount="indefinite"/>
+    <!-- label -->
+    <text x="20" y="150" fill="#e9f4ec" font-family="monospace" font-size="14">ans</text>
+    <g>
+      <!-- all six cells filled -->
+      <rect x="80" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="100" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">1</text>
+
+      <rect x="125" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="145" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">2</text>
+
+      <rect x="170" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="190" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">1</text>
+
+      <rect x="215" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="235" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">1</text>
+
+      <rect x="260" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="280" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">2</text>
+
+      <rect x="305" y="150" width="40" height="40" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="325" y="170" fill="#e9f4ec" font-family="monospace" font-size="14" text-anchor="middle" dominant-baseline="middle">1</text>
+    </g>
+    <!-- pointer moving across second half -->
+    <g transform="translate(235,130)">
+      <polygon points="-8,-12 8,-12 0,0" fill="#f5b942"/>
+      <animateTransform attributeName="transform" type="translate" values="235,130;280,130;325,130;325,130" keyTimes="0.75;0.8125;0.875;0.875" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
+    </g>
+    <!-- final result caption -->
+    <text x="300" y="210" fill="#63d488" font-family="monospace" font-size="14">Result: [1,2,1,1,2,1]</text>
+  </g>
+</svg>
