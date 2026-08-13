@@ -4,7 +4,8 @@
 
 **Language:** python3
 **Topics:** Array, Simulation
-**Size:** 2 lines · 2 chars
+**Size:** 4 lines · 87 chars
+**Revisions:** 2
 
 ## Complexity
 
@@ -17,5 +18,7 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
-c
+class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        
 ```

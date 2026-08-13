@@ -23,6 +23,7 @@
   <img src="https://img.shields.io/static/v1?style=flat-square&label=%F0%9F%94%A5+Streak&message=1+day&color=e8632a" alt="" />
   <img src="https://img.shields.io/static/v1?style=flat-square&label=Best&message=1+day&color=b7791f" alt="" />
   <img src="https://img.shields.io/static/v1?style=flat-square&label=Active+days&message=1&color=4a7c8c" alt="" />
+  <img src="https://img.shields.io/static/v1?style=flat-square&label=Revisions&message=%E2%86%BA+1&color=7c6fae" alt="" />
 </p>
 
 </div>
@@ -37,7 +38,7 @@ pie showData
 
 | # | Problem | Difficulty | Language | Commit | Synced |
 |:--:|:--|:--:|:--:|:--:|:--:|
-| 1 | **[Concatenation of Array](leetcode/concatenation-of-array/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [latest](https://github.com/DwijeshD/leetcode-solutions) | `2026-08-13` |
+| 1 | **[Concatenation of Array](leetcode/concatenation-of-array/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [latest](https://github.com/DwijeshD/leetcode-solutions) ↺2 | `2026-08-13` |
 
 ---
 
