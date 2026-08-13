@@ -4,17 +4,13 @@
 
 **Language:** python3
 **Topics:** Array, Simulation
-**Size:** 4 lines · 87 chars
-**Revisions:** 2
+**Size:** 3 lines · 78 chars
+**Revisions:** 3
 
 ## Complexity
 
-- **Time:** O(n) — single pass copies each element twice
-- **Space:** O(n) — creates a new array of size 2 n
-
-## How it works
-
-![How it works](./solution.svg)
+- **Time:** _not analyzed yet_
+- **Space:** _not analyzed yet_
 
 ## Solution
 
@@ -24,5 +20,4 @@ See [`Solution.py`](./Solution.py).
 
 class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
-        
 ```
