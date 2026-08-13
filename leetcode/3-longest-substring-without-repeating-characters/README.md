@@ -8,8 +8,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — each character is visited at most twice by the sliding‑window
+- **Space:** O(min(n, |charset|)) — the `seen` set holds at most one entry per distinct character
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
