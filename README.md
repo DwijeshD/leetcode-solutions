@@ -5,18 +5,18 @@
 **Accepted submissions, auto-committed by [LeetFrog](https://github.com/DwijeshD/LeetFrog)** 🐸
 
 <p>
-  <img src="https://img.shields.io/static/v1?style=for-the-badge&label=Solved&message=1&color=3fae5e&logo=github&logoColor=white" alt="" />
-  <img src="https://img.shields.io/static/v1?style=for-the-badge&label=LeetCode&message=1&color=FFA116&logo=leetcode&logoColor=white" alt="" />
+  <img src="https://img.shields.io/static/v1?style=for-the-badge&label=Solved&message=2&color=3fae5e&logo=github&logoColor=white" alt="" />
+  <img src="https://img.shields.io/static/v1?style=for-the-badge&label=LeetCode&message=2&color=FFA116&logo=leetcode&logoColor=white" alt="" />
 </p>
 
 <p>
   <img src="https://img.shields.io/static/v1?style=flat-square&label=Easy&message=1&color=3fae5e" alt="" />
-  <img src="https://img.shields.io/static/v1?style=flat-square&label=Medium&message=0&color=e8a317" alt="" />
+  <img src="https://img.shields.io/static/v1?style=flat-square&label=Medium&message=1&color=e8a317" alt="" />
   <img src="https://img.shields.io/static/v1?style=flat-square&label=Hard&message=0&color=e05252" alt="" />
 </p>
 
 <p>
-  <img src="https://img.shields.io/static/v1?style=flat-square&label=Python&message=1&color=3776AB&logo=python&logoColor=white" alt="" />
+  <img src="https://img.shields.io/static/v1?style=flat-square&label=Python&message=2&color=3776AB&logo=python&logoColor=white" alt="" />
 </p>
 
 <p>
@@ -32,13 +32,15 @@
 pie showData
     title Solved by difficulty
     "Easy" : 1
+    "Medium" : 1
 ```
 
-## 🟠 LeetCode  ·  1
+## 🟠 LeetCode  ·  2
 
 | # | Problem | Difficulty | Language | Commit | Synced |
 |:--:|:--|:--:|:--:|:--:|:--:|
-| 1 | **[Concatenation of Array](leetcode/concatenation-of-array/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [latest](https://github.com/DwijeshD/leetcode-solutions) ↺5 | `2026-08-13` |
+| 1 | **[Longest Substring Without Repeating Characters](leetcode/longest-substring-without-repeating-characters/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Medium&color=e8a317" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [latest](https://github.com/DwijeshD/leetcode-solutions) | `2026-08-13` |
+| 2 | **[Concatenation of Array](leetcode/concatenation-of-array/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [`efa04fe`](https://github.com/DwijeshD/leetcode-solutions/commit/efa04fe754ffad65052096de5022dc41b5dab294) ↺5 | `2026-08-13` |
 
 ---
 
