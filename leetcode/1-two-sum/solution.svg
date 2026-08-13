@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
+  <!-- background -->
+  <rect width="560" height="300" fill="#0b1310" stroke="#24382c" rx="10"/>
+  
+  <!-- array boxes -->
+  <g>
+    <!-- element 0 -->
+    <rect x="50" y="100" width="60" height="40" fill="#1a2820" stroke="#24382c"/>
+    <text x="80" y="125" text-anchor="middle" fill="#e9f4ec" font-family="monospace" font-size="14">2</text>
+    <text x="80" y="150" text-anchor="middle" fill="#a3b8ab" font-family="monospace" font-size="12">0</text>
+    <!-- element 1 -->
+    <rect x="120" y="100" width="60" height="40" fill="#1a2820" stroke="#24382c"/>
+    <text x="150" y="125" text-anchor="middle" fill="#e9f4ec" font-family="monospace" font-size="14">7</text>
+    <text x="150" y="150" text-anchor="middle" fill="#a3b8ab" font-family="monospace" font-size="12">1</text>
+    <!-- element 2 -->
+    <rect x="190" y="100" width="60" height="40" fill="#1a2820" stroke="#24382c"/>
+    <text x="220" y="125" text-anchor="middle" fill="#e9f4ec" font-family="monospace" font-size="14">11</text>
+    <text x="220" y="150" text-anchor="middle" fill="#a3b8ab" font-family="monospace" font-size="12">2</text>
+    <!-- element 3 -->
+    <rect x="260" y="100" width="60" height="40" fill="#1a2820" stroke="#24382c"/>
+    <text x="290" y="125" text-anchor="middle" fill="#e9f4ec" font-family="monospace" font-size="14">15</text>
+    <text x="290" y="150" text-anchor="middle" fill="#a3b8ab" font-family="monospace" font-size="12">3</text>
+  </g>
+
+  <!-- moving pointer (above the array) -->
+  <g id="ptr" fill="#f5b942">
+    <line x1="0" y1="-10" x2="0" y2="0" stroke="#f5b942" stroke-width="2"/>
+    <polygon points="-5,0 5,0 0,5" fill="#f5b942"/>
+    <animateTransform attributeName="transform" type="translate" dur="8s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.33;0.66;1" values="50 90;120 90;190 90;190 90"/>
+  </g>
+
+  <!-- step 0: start – map empty -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.165;0.33" values="0;1;0"/>
+    <text x="50" y="80" fill="#f5b942" font-family="monospace" font-size="14">Start: map empty</text>
+  </g>
+
+  <!-- step 1: after processing first element -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.33;0.495;0.66" values="0;1;0"/>
+    <text x="50" y="80" fill="#f5b942" font-family="monospace" font-size="14">Seen[2] = 0</text>
+  </g>
+
+  <!-- map entry for 2 → 0 (appears in step 1 and stays) -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.33;1" values="0;1;1"/>
+    <rect x="50" y="200" width="60" height="30" fill="#1a2820" stroke="#3fae5e"/>
+    <text x="55" y="220" fill="#e9f4ec" font-family="monospace" font-size="12">2→0</text>
+  </g>
+
+  <!-- step 2: answer found -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.66;0.825;1" values="0;1;0"/>
+    <text x="50" y="80" fill="#f5b942" font-family="monospace" font-size="14">Found: [0,1]</text>
+  </g>
+
+  <!-- final result (stays after step 2) -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="8s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.66;1" values="0;1;1"/>
+    <text x="50" y="260" fill="#63d488" font-family="monospace" font-size="16">Result: [0,1]</text>
+  </g>
+</svg>

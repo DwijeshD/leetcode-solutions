@@ -8,8 +8,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — single pass with hash‑map look‑ups
+- **Space:** O(n) — stores each element once in the map
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
