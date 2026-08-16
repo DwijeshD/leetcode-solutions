@@ -9,8 +9,8 @@
 
 ## Complexity
 
-- **Time:** O(n) — each node is dequeued and processed exactly once
-- **Space:** O(n) — the queue may hold up to all nodes in the worst case
+- **Time:** O(N) — each node is visited once in the BFS loop
+- **Space:** O(N) — the queue may hold up to a whole level of nodes
 
 ## How it works
 
