@@ -4,13 +4,13 @@
 
 **Language:** python3
 **Topics:** Tree, Breadth-First Search, Binary Tree
-**Size:** 16 lines · 328 chars
-**Revisions:** 7
+**Size:** 16 lines · 425 chars
+**Revisions:** 8
 
 ## Complexity
 
-- **Time:** O(N) — each node is visited once in the BFS loop
-- **Space:** O(N) — the queue may hold up to a whole level of nodes
+- **Time:** O(n) — each node is dequeued and processed exactly once
+- **Space:** O(n) — the queue may hold up to all nodes in the worst case
 
 ## How it works
 
@@ -22,19 +22,19 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
-#         self.right = right
-class Solution:
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List
-    [int]]:
-        if not root:
-            return []
-        
-        queue = deque([])
-        queue.append(root)
 
         result = []
 
         while queue:
             level = []
             level_size = len(queue)
+            for _ in range(level_size):
+                node = queue.popleft()
+                level.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            result.append(level)
+        return result
 ```
