@@ -1,4 +1,6 @@
 
+        queue.append(root)
+
         result = []
 
         while queue:
@@ -12,4 +14,3 @@
                 if node.right:
                     queue.append(node.right)
             result.append(level)
-        return result
