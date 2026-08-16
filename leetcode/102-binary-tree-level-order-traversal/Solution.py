@@ -1,7 +1,4 @@
 
-        
-        queue = deque([])
-        queue.append(root)
 
         result = []
 
@@ -14,3 +11,6 @@
                 if node.left:
                     queue.append(node.left)
                 if node.right:
+                    queue.append(node.right)
+            result.append(level)
+        return result

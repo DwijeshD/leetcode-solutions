@@ -4,8 +4,8 @@
 
 **Language:** python3
 **Topics:** Tree, Breadth-First Search, Binary Tree
-**Size:** 16 lines · 387 chars
-**Revisions:** 16
+**Size:** 16 lines · 425 chars
+**Revisions:** 17
 
 ## Complexity
 
@@ -22,9 +22,6 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
-        
-        queue = deque([])
-        queue.append(root)
 
         result = []
 
@@ -37,4 +34,7 @@ See [`Solution.py`](./Solution.py).
                 if node.left:
                     queue.append(node.left)
                 if node.right:
+                    queue.append(node.right)
+            result.append(level)
+        return result
 ```
