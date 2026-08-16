@@ -1,4 +1,5 @@
 
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List
     [int]]:
         if not root:
             return []
@@ -13,4 +14,3 @@
             level_size = len(queue)
             for _ in range(level_size):
                 node = queue.popleft()
-                level.append(node.val)
