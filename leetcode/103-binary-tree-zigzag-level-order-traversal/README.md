@@ -8,8 +8,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — each node is visited once in the BFS loop
+- **Space:** O(n) — the queue can contain up to the width of the tree (worst‑case all nodes)
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
