@@ -1,106 +1,107 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
   <!-- Background -->
   <rect x="0" y="0" width="560" height="300" rx="10" fill="#0b1310" stroke="#24382c"/>
-  
-  <!-- Definitions -->
+
+  <!-- Arrowhead marker for edges -->
   <defs>
-    <marker id="arrow" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto">
-      <path d="M0 0 L0 6 L6 3 Z" fill="#f5b942"/>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" fill="#a3b8ab">
+      <path d="M0,0 L0,6 L6,3 z"/>
     </marker>
+    <!-- Text style (presentation only) -->
   </defs>
-  
-  <!-- Static Tree Diagram -->
-  <g>
-    <!-- Edges -->
-    <path d="M280 55 L180 105" stroke="#f5b942" fill="none" marker-end="url(#arrow)"/>
-    <path d="M300 55 L380 105" stroke="#f5b942" fill="none" marker-end="url(#arrow)"/>
-    <path d="M380 135 C360 150 340 170 330 185" stroke="#f5b942" fill="none" marker-end="url(#arrow)"/>
-    <path d="M400 135 C420 150 440 170 430 185" stroke="#f5b942" fill="none" marker-end="url(#arrow)"/>
-    
-    <!-- Nodes -->
+
+  <!-- Tree nodes (circles) -->
+  <g font-family="monospace" font-size="14" text-anchor="middle" fill="#e9f4ec">
     <!-- Root -->
-    <rect x="260" y="25" width="40" height="30" fill="#1a2820" stroke="#24382c"/>
-    <text x="280" y="45" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">3</text>
+    <circle cx="280" cy="50" r="20" fill="#1a2820" stroke="#24382c"/>
+    <text x="280" y="55" font-weight="bold">3</text>
     <!-- Left child -->
-    <rect x="160" y="105" width="40" height="30" fill="#1a2820" stroke="#24382c"/>
-    <text x="180" y="125" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">9</text>
+    <circle cx="180" cy="130" r="20" fill="#1a2820" stroke="#24382c"/>
+    <text x="180" y="135">9</text>
     <!-- Right child -->
-    <rect x="360" y="105" width="40" height="30" fill="#1a2820" stroke="#24382c"/>
-    <text x="380" y="125" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">20</text>
-    <!-- 15 -->
-    <rect x="310" y="175" width="40" height="30" fill="#1a2820" stroke="#24382c"/>
-    <text x="330" y="195" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">15</text>
-    <!-- 7 -->
-    <rect x="410" y="175" width="40" height="30" fill="#1a2820" stroke="#24382c"/>
-    <text x="430" y="195" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">7</text>
+    <circle cx="380" cy="130" r="20" fill="#1a2820" stroke="#24382c"/>
+    <text x="380" y="135">20</text>
+    <!-- Left of 20 -->
+    <circle cx="320" cy="210" r="20" fill="#1a2820" stroke="#24382c"/>
+    <text x="320" y="215">15</text>
+    <!-- Right of 20 -->
+    <circle cx="440" cy="210" r="20" fill="#1a2820" stroke="#24382c"/>
+    <text x="440" y="215">7</text>
   </g>
-  
-  <!-- Step 0: Initial queue -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0;0.1667" dur="8s" repeatCount="indefinite"/>
-    <!-- Caption -->
-    <text x="280" y="20" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">Start: queue contains root</text>
-    <!-- Queue -->
-    <rect x="240" y="245" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-    <text x="260" y="265" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">3</text>
-    <!-- Result -->
-    <text x="50" y="30" font-family="monospace" font-size="12" fill="#e9f4ec">Result: []</text>
+
+  <!-- Edges (paths) -->
+  <g stroke="#a3b8ab" fill="none" stroke-width="2">
+    <path d="M280,70 C260,100 200,100 180,110" marker-end="url(#arrow)"/>
+    <path d="M280,70 C300,100 360,100 380,110" marker-end="url(#arrow)"/>
+    <path d="M380,150 C360,180 340,190 320,190" marker-end="url(#arrow)"/>
+    <path d="M380,150 C400,180 420,190 440,190" marker-end="url(#arrow)"/>
   </g>
-  
-  <!-- Step 1: Process 3, enqueue 9 & 20 -->
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.1667;0.3333" dur="8s" repeatCount="indefinite"/>
-    <text x="280" y="20" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">Process 3, enqueue 9 and 20</text>
-    <!-- Queue -->
-    <rect x="190" y="245" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-    <text x="210" y="265" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">9</text>
-    <rect x="240" y="245" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-    <text x="260" y="265" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">20</text>
-    <!-- Result -->
-    <text x="50" y="30" font-family="monospace" font-size="12" fill="#e9f4ec">Result: [[3]]</text>
+
+  <!-- Pointer rectangle that moves over nodes -->
+  <g id="ptr" opacity="0">
+    <rect x="-20" y="-20" width="40" height="40" fill="none" stroke="#f5b942" stroke-width="3"/>
+    <animate attributeName="opacity" values="0;1;0;0;0;0" keyTimes="0;0.08;0.12;0.2;0.4;0.6" dur="8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="260,30;160,110;380,110;320,190;440,190" keyTimes="0;0.2;0.4;0.6;0.8" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
   </g>
-  
-  <!-- Step 2: Process 9 -->
+
+  <!-- Step groups (queues and captions) -->
+  <!-- Step 0: processing root (3) -->
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.3333;0.5" dur="8s" repeatCount="indefinite"/>
-    <text x="280" y="20" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">Process 9 (no children)</text>
-    <!-- Queue -->
-    <rect x="190" y="245" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-    <text x="210" y="265" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">20</text>
-    <!-- Result -->
-    <text x="50" y="30" font-family="monospace" font-size="12" fill="#e9f4ec">Result: [[3],[9]]</text>
+    <animate attributeName="opacity" values="0;1;0;0;0;0" keyTimes="0;0.08;0.12;0.2;0.4;0.6" dur="8s" repeatCount="indefinite"/>
+    <!-- Queue after processing root -->
+    <g font-family="monospace" font-size="12" fill="#e9f4ec">
+      <rect x="200" y="250" width="50" height="30" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="225" y="270">9</text>
+      <rect x="260" y="250" width="50" height="30" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="285" y="270">20</text>
+    </g>
+    <text x="280" y="235" fill="#f5b942" font-family="monospace" font-size="12" text-anchor="middle">Dequeue 3, enqueue 9 &amp; 20</text>
   </g>
-  
-  <!-- Step 3: Process 20, enqueue 15 & 7 -->
+
+  <!-- Step 1: processing 9 -->
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.5;0.6667" dur="8s" repeatCount="indefinite"/>
-    <text x="280" y="20" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">Process 20, enqueue 15 and 7</text>
-    <!-- Queue -->
-    <rect x="190" y="245" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-    <text x="210" y="265" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">15</text>
-    <rect x="240" y="245" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-    <text x="260" y="265" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">7</text>
-    <!-- Result -->
-    <text x="50" y="30" font-family="monospace" font-size="12" fill="#e9f4ec">Result: [[3],[9,20]]</text>
+    <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.2;0.28;0.32;0.4;0.6" dur="8s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="12" fill="#e9f4ec">
+      <rect x="260" y="250" width="50" height="30" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="285" y="270">20</text>
+    </g>
+    <text x="280" y="235" fill="#f5b942" font-family="monospace" font-size="12" text-anchor="middle">Dequeue 9 (no children)</text>
   </g>
-  
-  <!-- Step 4: Process 15 -->
+
+  <!-- Step 2: processing 20 -->
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.6667;0.8333" dur="8s" repeatCount="indefinite"/>
-    <text x="280" y="20" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">Process 15 (no children)</text>
-    <!-- Queue -->
-    <rect x="190" y="245" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-    <text x="210" y="265" text-anchor="middle" dominant-baseline="middle" font-family="monospace" font-size="14" fill="#e9f4ec">7</text>
-    <!-- Result -->
-    <text x="50" y="30" font-family="monospace" font-size="12" fill="#e9f4ec">Result: [[3],[9,20],[15]]</text>
+    <animate attributeName="opacity" values="0;0;0;1;0;0" keyTimes="0;0.4;0.48;0.52;0.6;0.8" dur="8s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="12" fill="#e9f4ec">
+      <rect x="300" y="250" width="50" height="30" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="325" y="270">15</text>
+      <rect x="360" y="250" width="50" height="30" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="385" y="270">7</text>
+    </g>
+    <text x="280" y="235" fill="#f5b942" font-family="monospace" font-size="12" text-anchor="middle">Dequeue 20, enqueue 15 &amp; 7</text>
   </g>
-  
-  <!-- Step 5: Process 7 – finished -->
+
+  <!-- Step 3: processing 15 -->
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.8333;1" dur="8s" repeatCount="indefinite"/>
-    <text x="280" y="20" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">Process 7 (no children) – finished</text>
-    <!-- Queue: empty (no rects) -->
-    <!-- Result -->
-    <text x="50" y="30" font-family="monospace" font-size="12" fill="#63d488">Result: [[3],[9,20],[15,7]]</text>
+    <animate attributeName="opacity" values="0;0;0;0;1;0" keyTimes="0;0.6;0.68;0.72;0.8;0.92" dur="8s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="12" fill="#e9f4ec">
+      <rect x="360" y="250" width="50" height="30" fill="#1a2820" stroke="#3fae5e"/>
+      <text x="385" y="270">7</text>
+    </g>
+    <text x="280" y="235" fill="#f5b942" font-family="monospace" font-size="12" text-anchor="middle">Dequeue 15 (no children)</text>
+  </g>
+
+  <!-- Step 4: processing 7 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;1" keyTimes="0;0.8;0.88;0.92;1;1" dur="8s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="12" fill="#e9f4ec">
+      <!-- empty queue -->
+    </g>
+    <text x="280" y="235" fill="#f5b942" font-family="monospace" font-size="12" text-anchor="middle">Dequeue 7 (no children)</text>
+  </g>
+
+  <!-- Final result display -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;1" keyTimes="0;0.9;0.95;1;1;1" dur="8s" repeatCount="indefinite"/>
+    <text x="280" y="280" fill="#63d488" font-family="monospace" font-size="14" text-anchor="middle">Result: [[3],[9,20],[15,7]]</text>
   </g>
 </svg>

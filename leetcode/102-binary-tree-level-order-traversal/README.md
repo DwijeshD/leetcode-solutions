@@ -9,8 +9,8 @@
 
 ## Complexity
 
-- **Time:** O(n) — each node is dequeued and processed exactly once
-- **Space:** O(n) — the queue may hold up to all nodes in the worst case
+- **Time:** O(n) — each node is visited once in the queue
+- **Space:** O(m) — queue holds at most the number of nodes on one level (≤ n)
 
 ## How it works
 
