@@ -4,8 +4,8 @@
 
 **Language:** python3
 **Topics:** Tree, Breadth-First Search, Binary Tree
-**Size:** 14 lines · 405 chars
-**Revisions:** 2
+**Size:** 15 lines · 425 chars
+**Revisions:** 3
 
 ## Complexity
 
@@ -22,6 +22,7 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
+        result = []
 
         while queue:
             level = []

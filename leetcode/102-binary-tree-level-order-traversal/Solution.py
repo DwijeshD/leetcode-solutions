@@ -1,4 +1,5 @@
 
+        result = []
 
         while queue:
             level = []
