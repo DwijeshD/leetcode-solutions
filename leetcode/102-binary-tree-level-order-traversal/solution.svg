@@ -1,121 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
-  <!-- Definitions -->
-  <defs>
-    <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="#f5b942"/>
-    </marker>
-  </defs>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300">
   <!-- Background -->
   <rect x="0" y="0" width="560" height="300" rx="10" fill="#0b1310" stroke="#24382c"/>
-
-  <!-- Tree nodes -->
-  <g id="tree">
+  
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#e9f4ec"/>
+    </marker>
+  </defs>
+  
+  <!-- Tree Nodes -->
+  <g font-family="monospace" font-size="14" fill="#e9f4ec" stroke="#24382c">
     <!-- Root -->
-    <circle cx="280" cy="50" r="20" fill="#1a2820" stroke="#24382c"/>
-    <text x="280" y="55" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">3</text>
-
+    <circle cx="280" cy="50" r="20" fill="#1a2820"/>
+    <text x="280" y="55" text-anchor="middle">3</text>
     <!-- Left child -->
-    <circle cx="200" cy="120" r="20" fill="#1a2820" stroke="#24382c"/>
-    <text x="200" y="125" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">9</text>
-
+    <circle cx="180" cy="120" r="20" fill="#1a2820"/>
+    <text x="180" y="125" text-anchor="middle">9</text>
     <!-- Right child -->
-    <circle cx="360" cy="120" r="20" fill="#1a2820" stroke="#24382c"/>
-    <text x="360" y="125" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">20</text>
-
+    <circle cx="380" cy="120" r="20" fill="#1a2820"/>
+    <text x="380" y="125" text-anchor="middle">20</text>
     <!-- Left grandchild -->
-    <circle cx="320" cy="190" r="20" fill="#1a2820" stroke="#24382c"/>
-    <text x="320" y="195" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">15</text>
-
+    <circle cx="320" cy="190" r="20" fill="#1a2820"/>
+    <text x="320" y="195" text-anchor="middle">15</text>
     <!-- Right grandchild -->
-    <circle cx="400" cy="190" r="20" fill="#1a2820" stroke="#24382c"/>
-    <text x="400" y="195" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">7</text>
-
+    <circle cx="440" cy="190" r="20" fill="#1a2820"/>
+    <text x="440" y="195" text-anchor="middle">7</text>
+    
     <!-- Edges -->
-    <path d="M280,70 C260,90 210,100 200,100" fill="none" stroke="#a3b8ab" marker-end="url(#arrow)"/>
-    <path d="M280,70 C300,90 350,100 360,100" fill="none" stroke="#a3b8ab" marker-end="url(#arrow)"/>
-    <path d="M360,140 C340,160 330,170 320,170" fill="none" stroke="#a3b8ab" marker-end="url(#arrow)"/>
-    <path d="M360,140 C380,160 390,170 400,170" fill="none" stroke="#a3b8ab" marker-end="url(#arrow)"/>
+    <path d="M280,50 Q230,85 180,120" fill="none" stroke="#e9f4ec" marker-end="url(#arrow)"/>
+    <path d="M280,50 Q430,85 380,120" fill="none" stroke="#e9f4ec" marker-end="url(#arrow)"/>
+    <path d="M380,120 Q380,155 320,190" fill="none" stroke="#e9f4ec" marker-end="url(#arrow)"/>
+    <path d="M380,120 Q460,155 440,190" fill="none" stroke="#e9f4ec" marker-end="url(#arrow)"/>
   </g>
-
-  <!-- Queue area -->
-  <g id="queue" transform="translate(0,250)">
-    <!-- Queue boxes (will be shown/hidden per step) -->
-    <g id="q0" opacity="0">
-      <rect x="240" y="0" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-      <text x="260" y="20" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">3</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0;0.111111" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g id="q1" opacity="0">
-      <rect x="190" y="0" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-      <text x="210" y="20" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">9</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.222222;0.333333" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g id="q2" opacity="0">
-      <rect x="250" y="0" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-      <text x="270" y="20" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">20</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.222222;0.333333" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g id="q3" opacity="0">
-      <rect x="190" y="0" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-      <text x="210" y="20" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">15</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.444444;0.555555" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g id="q4" opacity="0">
-      <rect x="250" y="0" width="40" height="30" fill="#1a2820" stroke="#3fae5e"/>
-      <text x="270" y="20" text-anchor="middle" font-family="monospace" font-size="14" fill="#e9f4ec">7</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.444444;0.555555" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
+  
+  <!-- Moving pointer (triangle) -->
+  <g fill="#f5b942" stroke="#f5b942">
+    <path d="M0,-10 L-8,0 L8,0 Z"/>
+    <animateTransform attributeName="transform" type="translate" dur="9s" repeatCount="indefinite" calcMode="discrete" values="0 0;-100 70;100 70;0 0" keyTimes="0;0.33;0.66;1"/>
   </g>
-
-  <!-- Result area -->
-  <g id="result" transform="translate(420,20)">
-    <text x="0" y="0" font-family="monospace" font-size="14" fill="#a3b8ab">Result:</text>
-    <g id="r0" opacity="0">
-      <text x="0" y="20" font-family="monospace" font-size="14" fill="#63d488">[[3]]</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.222222;0.333333" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g id="r1" opacity="0">
-      <text x="0" y="40" font-family="monospace" font-size="14" fill="#63d488">[[9,20]]</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.555555;0.666666" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g id="r2" opacity="0">
-      <text x="0" y="60" font-family="monospace" font-size="14" fill="#63d488">[[15,7]]</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.888888;0.999999" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
+  
+  <!-- Step 0: initial queue after enqueuing root -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0;0.33;1" values="0;1;0;0"/>
+    <text x="100" y="260" fill="#a3b8ab">Queue:</text>
+    <rect x="150" y="245" width="40" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="170" y="267" fill="#e9f4ec" text-anchor="middle">3</text>
+    <text x="280" y="260" fill="#a3b8ab">Result so far:</text>
+    <text x="380" y="260" fill="#63d488">[[3]]</text>
   </g>
-
-  <!-- Pointer (highlight current node being dequeued) -->
-  <g id="pointer" opacity="1">
-    <path d="M0,0 L10,0 L5,8 Z" fill="#f5b942"/>
-    <animateTransform attributeName="transform" type="translate" values="-100,-100;280,30;-100,-100;200,100;360,100;-100,-100;320,170;400,170;-100,-100;-100,-100" keyTimes="0;0.111111;0.222222;0.333333;0.444444;0.555555;0.666666;0.777777;0.888888;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
+  
+  <!-- Step 1: after processing root, children enqueued -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.33;0.66;1" values="0;1;0;0"/>
+    <text x="80" y="260" fill="#a3b8ab">Queue:</text>
+    <rect x="150" y="245" width="40" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="170" y="267" fill="#e9f4ec" text-anchor="middle">9</text>
+    <rect x="210" y="245" width="40" height="30" fill="#1a2820" stroke="#24382c"/>
+    <text x="230" y="267" fill="#e9f4ec" text-anchor="middle">20</text>
+    <text x="280" y="260" fill="#a3b8ab">Result so far:</text>
+    <text x="380" y="260" fill="#63d488">[[3],[9,20]]</text>
   </g>
-
-  <!-- Step captions (optional for clarity) -->
-  <g id="caption" transform="translate(10,280)" font-family="monospace" font-size="12" fill="#a3b8ab">
-    <g opacity="0">
-      <text>Initialize queue with root</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.111111;0.222222" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g opacity="0">
-      <text>Process node 3, enqueue 9 and 20</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0.222222;0.333333;0.444444" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g opacity="0">
-      <text>Add first level to result</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0.444444;0.555555;0.666666" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g opacity="0">
-      <text>Process node 9</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0.666666;0.777777;0.888888" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g opacity="0">
-      <text>Process node 20, enqueue 15 and 7</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0.777777;0.888888;0.999999" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
-    <g opacity="0">
-      <text>Add second level to result</text>
-      <animate attributeName="opacity" values="0;1;0" keyTimes="0.888888;0.999999;1" dur="8s" repeatCount="indefinite" calcMode="discrete"/>
-    </g>
+  
+  <!-- Step 2: final queue empty, full result -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.66;0.99;1" values="0;1;0;0"/>
+    <text x="80" y="260" fill="#a3b8ab">Queue:</text>
+    <text x="150" y="267" fill="#a3b8ab">empty</text>
+    <text x="260" y="260" fill="#a3b8ab">Result:</text>
+    <text x="340" y="260" fill="#63d488">[[3],[9,20],[15,7]]</text>
   </g>
 </svg>
