@@ -4,13 +4,13 @@
 
 **Language:** python3
 **Topics:** Tree, Breadth-First Search, Binary Tree
-**Size:** 16 lines · 423 chars
-**Revisions:** 4
+**Size:** 15 lines · 356 chars
+**Revisions:** 5
 
 ## Complexity
 
-- **Time:** O(n) — each node is visited once in the queue
-- **Space:** O(m) — queue holds at most the number of nodes on one level (≤ n)
+- **Time:** O(n) — each node is dequeued and processed exactly once
+- **Space:** O(n) — the queue may hold up to all nodes in the worst case
 
 ## How it works
 
@@ -22,6 +22,7 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
+        
         queue = deque([])
         queue.append(root)
 
@@ -35,6 +36,4 @@ See [`Solution.py`](./Solution.py).
                 level.append(node.val)
                 if node.left:
                     queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
 ```
