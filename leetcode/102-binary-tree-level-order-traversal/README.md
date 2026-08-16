@@ -9,8 +9,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — each node is dequeued and processed exactly once
+- **Space:** O(n) — the queue may hold up to all nodes in the worst case
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
