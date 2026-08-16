@@ -4,8 +4,8 @@
 
 **Language:** python3
 **Topics:** Tree, Breadth-First Search, Binary Tree
-**Size:** 16 lines · 430 chars
-**Revisions:** 14
+**Size:** 16 lines · 328 chars
+**Revisions:** 15
 
 ## Complexity
 
@@ -22,6 +22,14 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
+#         self.right = right
+class Solution:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List
+    [int]]:
+        if not root:
+            return []
+        
+        queue = deque([])
         queue.append(root)
 
         result = []
@@ -29,12 +37,4 @@ See [`Solution.py`](./Solution.py).
         while queue:
             level = []
             level_size = len(queue)
-            for _ in range(level_size):
-                node = queue.popleft()
-                level.append(node.val)
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
-            result.append(level)
 ```
