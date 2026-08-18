@@ -4,8 +4,8 @@
 
 **Language:** python3
 **Topics:** Hash Table, String
-**Size:** 15 lines · 251 chars
-**Revisions:** 19
+**Size:** 14 lines · 250 chars
+**Revisions:** 20
 
 ## Complexity
 
@@ -30,7 +30,6 @@ See [`Solution.py`](./Solution.py).
         return True
 
         
-
 
 
 ```
