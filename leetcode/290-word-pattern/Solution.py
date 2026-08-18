@@ -1,4 +1,5 @@
 
+            if char in char_to_word and char_to_word[char] != 
             word:
                 return False
 
