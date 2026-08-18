@@ -1,4 +1,6 @@
 
+        words = s.split()
+
         if len(pattern) != len(words):
             return False
 
@@ -11,5 +13,3 @@
                 return False
 
             if word in word_to_char and word_to_char[word] != 
-            char:
-                return False
