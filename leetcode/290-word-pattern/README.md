@@ -4,8 +4,8 @@
 
 **Language:** python3
 **Topics:** Hash Table, String
-**Size:** 15 lines · 376 chars
-**Revisions:** 36
+**Size:** 16 lines · 384 chars
+**Revisions:** 37
 
 ## Complexity
 
@@ -18,8 +18,6 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
-class Solution:
-    def wordPattern(self, pattern: str, s: str) -> bool:
         words = s.split()
 
         if len(pattern) != len(words):
@@ -33,4 +31,6 @@ class Solution:
             word:
                 return False
 
+            if word in word_to_char and word_to_char[word] != 
+            char:
 ```
