@@ -4,7 +4,7 @@
 
 **Language:** python3
 **Topics:** Hash Table, String
-**Size:** 14 lines · 222 chars
+**Size:** 16 lines · 423 chars
 **Revisions:** 53
 
 ## Complexity
@@ -18,18 +18,19 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
+    def wordPattern(self, pattern: str, s: str) -> bool:
+        words = s.split()
 
-            if word in word_to_char and word_to_char[word] != 
-            char:
+        if len(pattern) != len(words):
+            return False
+
+        char_to_word = {}
+        word_to_char = {}
+
+        for char, word in zip(pattern, words):
+            if char in char_to_word and char_to_word[char] != 
+            word:
                 return False
 
-            char_to_word[char] = word
-            word_to_char[word] = char
-
-        return True
-
-        
-
-
-
+            if word in word_to_char and word_to_char[word] != 
 ```
