@@ -1,6 +1,4 @@
 
-        for char, word in zip(pattern, words):
-            if char in char_to_word and char_to_word[char] != 
             word:
                 return False
 
@@ -14,3 +12,4 @@
         return True
 
         
+
