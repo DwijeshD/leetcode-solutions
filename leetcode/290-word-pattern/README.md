@@ -4,8 +4,8 @@
 
 **Language:** python3
 **Topics:** Hash Table, String
-**Size:** 15 lines · 251 chars
-**Revisions:** 38
+**Size:** 14 lines · 222 chars
+**Revisions:** 39
 
 ## Complexity
 
@@ -18,8 +18,6 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
-                return False
-
             if word in word_to_char and word_to_char[word] != 
             char:
                 return False
@@ -30,6 +28,7 @@ See [`Solution.py`](./Solution.py).
         return True
 
         
+
 
 
 
