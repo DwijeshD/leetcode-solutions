@@ -4,8 +4,8 @@
 
 **Language:** python3
 **Topics:** Hash Table, String
-**Size:** 16 lines · 393 chars
-**Revisions:** 33
+**Size:** 15 lines · 330 chars
+**Revisions:** 34
 
 ## Complexity
 
@@ -18,9 +18,6 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
-        word_to_char = {}
-
-        for char, word in zip(pattern, words):
             if char in char_to_word and char_to_word[char] != 
             word:
                 return False
@@ -33,4 +30,7 @@ See [`Solution.py`](./Solution.py).
             word_to_char[word] = char
 
         return True
+
+        
+
 ```
