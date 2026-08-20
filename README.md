@@ -23,7 +23,7 @@
   <img src="https://img.shields.io/static/v1?style=flat-square&label=%F0%9F%94%A5+Streak&message=1+day&color=e8632a" alt="" />
   <img src="https://img.shields.io/static/v1?style=flat-square&label=Best&message=1+day&color=b7791f" alt="" />
   <img src="https://img.shields.io/static/v1?style=flat-square&label=Active+days&message=4&color=4a7c8c" alt="" />
-  <img src="https://img.shields.io/static/v1?style=flat-square&label=Revisions&message=%E2%86%BA+94&color=7c6fae" alt="" />
+  <img src="https://img.shields.io/static/v1?style=flat-square&label=Revisions&message=%E2%86%BA+95&color=7c6fae" alt="" />
 </p>
 
 </div>
@@ -39,7 +39,7 @@ pie showData
 
 | # | Problem | Difficulty | Language | Commit | Synced |
 |:--:|:--|:--:|:--:|:--:|:--:|
-| 1 | **[Subarray Sum Equals K](leetcode/subarray-sum-equals-k/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Medium&color=e8a317" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [latest](https://github.com/DwijeshD/leetcode-solutions) ↺2 | `2026-08-20` |
+| 1 | **[Subarray Sum Equals K](leetcode/subarray-sum-equals-k/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Medium&color=e8a317" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [latest](https://github.com/DwijeshD/leetcode-solutions) ↺3 | `2026-08-20` |
 | 2 | **[Word Pattern](leetcode/word-pattern/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [`6bcd499`](https://github.com/DwijeshD/leetcode-solutions/commit/6bcd499a6a5d91ac6895de1e57fba8e63b6e78cc) ↺69 | `2026-08-18` |
 | 3 | **[Binary Tree Zigzag Level Order Traversal](leetcode/binary-tree-zigzag-level-order-traversal/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Medium&color=e8a317" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [`d2c201e`](https://github.com/DwijeshD/leetcode-solutions/commit/d2c201e675bf73cec6499615248c5ba5cea82382) | `2026-08-16` |
 | 4 | **[Binary Tree Level Order Traversal](leetcode/binary-tree-level-order-traversal/)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Medium&color=e8a317" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [`32180c7`](https://github.com/DwijeshD/leetcode-solutions/commit/32180c7d793c9b4286d2d3d062a82bae2acdfa0e) ↺22 | `2026-08-16` |
