@@ -4,7 +4,8 @@
 
 **Language:** python3
 **Topics:** Array, Hash Table, Prefix Sum
-**Size:** 15 lines · 375 chars
+**Size:** 11 lines · 249 chars
+**Revisions:** 2
 
 ## Complexity
 
@@ -17,12 +18,6 @@ See [`Solution.py`](./Solution.py).
 
 ```python
 
-class Solution:
-    def subarraySum(self, nums: List[int], k: int) -> int:
-        map = {0: 1}
-        prefix = 0
-        counter = 0
-
         for i in range(len(nums)):
             prefix += nums[i]
             needed = prefix - k
@@ -31,4 +26,6 @@ class Solution:
             map[prefix] = map.get(prefix, 0) + 1
 
         return counter
+
+        
 ```
