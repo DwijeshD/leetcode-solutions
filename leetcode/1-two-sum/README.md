@@ -5,7 +5,14 @@
 **Language:** python3
 **Topics:** Array, Hash Table
 **Size:** 9 lines · 278 chars
-**Revisions:** 2
+**Revisions:** 3
+
+## Performance
+
+| Metric | Value | Beats |
+| --- | --- | --- |
+| Runtime | 0 ms | 100% |
+| Memory | 20.57 MB | 17.92% |
 
 ## Complexity
 
@@ -29,6 +36,6 @@ class Solution:
                 return [seen[target - n], i]
             seen[n] = i
         return []
-# run-1787528921955
+# run-1787529032133
 
 ```

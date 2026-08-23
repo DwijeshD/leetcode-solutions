@@ -23,7 +23,7 @@
   <img src="https://img.shields.io/static/v1?style=flat-square&label=%F0%9F%94%A5+Streak&message=1+day&color=e8632a" alt="" />
   <img src="https://img.shields.io/static/v1?style=flat-square&label=Best&message=2+days&color=b7791f" alt="" />
   <img src="https://img.shields.io/static/v1?style=flat-square&label=Active+days&message=6&color=4a7c8c" alt="" />
-  <img src="https://img.shields.io/static/v1?style=flat-square&label=Revisions&message=%E2%86%BA+96&color=7c6fae" alt="" />
+  <img src="https://img.shields.io/static/v1?style=flat-square&label=Revisions&message=%E2%86%BA+97&color=7c6fae" alt="" />
 </p>
 
 </div>
@@ -39,7 +39,7 @@ pie showData
 
 | # | Problem | Difficulty | Language | Commit | Synced |
 |:--:|:--|:--:|:--:|:--:|:--:|
-| 1 | **[Two Sum](https://github.com/DwijeshD/leetcode-solutions/tree/main/leetcode/1-two-sum)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [latest](https://github.com/DwijeshD/leetcode-solutions) ↺2 | `2026-08-23` |
+| 1 | **[Two Sum](https://github.com/DwijeshD/leetcode-solutions/tree/main/leetcode/1-two-sum)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [latest](https://github.com/DwijeshD/leetcode-solutions) ↺3 | `2026-08-23` |
 | 2 | **[Isomorphic Strings](https://github.com/DwijeshD/leetcode-solutions/tree/main/leetcode/205-isomorphic-strings)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [`f879b9e`](https://github.com/DwijeshD/leetcode-solutions/commit/f879b9e69212875aaa555e777b4cb560c73dfec5) | `2026-08-23` |
 | 3 | **[Remove Element](https://github.com/DwijeshD/leetcode-solutions/tree/main/leetcode/remove-element)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=%E2%80%94&color=9e9e9e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [`fbcf303`](https://github.com/DwijeshD/leetcode-solutions/commit/fbcf303eedf8089b385780dbb169d509f73edff2) | `2026-08-23` |
 | 4 | **[Longest Common Prefix](https://github.com/DwijeshD/leetcode-solutions/tree/main/leetcode/14-longest-common-prefix)** | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Easy&color=3fae5e" alt="" /> | <img src="https://img.shields.io/static/v1?style=flat-square&label=&message=Python&color=3776AB&logo=python&logoColor=white" alt="" /> | [`b53e4f8`](https://github.com/DwijeshD/leetcode-solutions/commit/b53e4f82420ac460a880e45a795875cc92707c90) | `2026-08-21` |

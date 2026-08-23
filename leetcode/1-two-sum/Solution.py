@@ -6,4 +6,4 @@ class Solution:
                 return [seen[target - n], i]
             seen[n] = i
         return []
-# run-1787528921955
+# run-1787529032133
