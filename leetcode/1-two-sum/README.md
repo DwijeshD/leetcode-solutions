@@ -1,10 +1,11 @@
 # Two Sum  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/two-sum) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/two-sum) · synced 2026-08-23
 
 **Language:** python3
 **Topics:** Array, Hash Table
-**Size:** 12 lines · 303 chars
+**Size:** 9 lines · 278 chars
+**Revisions:** 2
 
 ## Complexity
 
@@ -20,16 +21,14 @@
 See [`Solution.py`](./Solution.py).
 
 ```python
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        seen = {}
+        for i, n in enumerate(nums):
+            if target - n in seen:
+                return [seen[target - n], i]
+            seen[n] = i
+        return []
+# run-1787528921955
 
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        
-        seen = {}
-        for i, num in enumerate(nums):
-            diff = target - num
-            if diff in seen:
-                return [seen[diff], i]
-            seen[num] = i
-                    
-        
 ```
