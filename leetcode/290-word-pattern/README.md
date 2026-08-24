@@ -1,16 +1,19 @@
-# Word Pattern  ·  Easy
+# Word Pattern
 
-> Leetcode · [Open problem](https://leetcode.com/problems/word-pattern) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Hash Table, String
 **Size:** 14 lines · 150 chars
 **Revisions:** 69
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — one pass, O(1) hash-map operations
+- **Space:** O(k) — k distinct pattern letters / words stored
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
