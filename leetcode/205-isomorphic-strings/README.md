@@ -1,15 +1,18 @@
-# Isomorphic Strings  ·  Easy
+# Isomorphic Strings
 
-> Leetcode · [Open problem](https://leetcode.com/problems/isomorphic-strings) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Hash Table, String
 **Size:** 21 lines · 495 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — single pass with O(1) hash-map lookups
+- **Space:** O(1) — at most 26 letters in each map
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
