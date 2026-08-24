@@ -1,15 +1,18 @@
-# Sequential Digits  ·  Medium
+# Sequential Digits
 
-> Leetcode · [Open problem](https://leetcode.com/problems/sequential-digits) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Enumeration
 **Size:** 15 lines · 549 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(1) — at most 9 possible window lengths over 9 digits
+- **Space:** O(1) — output size is bounded by a small constant
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
