@@ -1,6 +1,6 @@
 # Longest Substring Without Repeating Characters  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/longest-substring-without-repeating-characters) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/longest-substring-without-repeating-characters) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Hash Table, String, Sliding Window
