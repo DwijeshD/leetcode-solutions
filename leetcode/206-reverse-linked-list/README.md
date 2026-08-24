@@ -1,6 +1,6 @@
 # Reverse Linked List  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/reverse-linked-list) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/reverse-linked-list) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Linked List, Recursion
