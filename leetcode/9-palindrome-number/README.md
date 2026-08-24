@@ -1,6 +1,6 @@
 # Palindrome Number  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/palindrome-number) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/palindrome-number) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Math
