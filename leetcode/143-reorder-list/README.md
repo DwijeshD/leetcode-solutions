@@ -1,6 +1,6 @@
 # Reorder List  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/reorder-list) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/reorder-list) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Linked List, Two Pointers, Stack, Recursion
