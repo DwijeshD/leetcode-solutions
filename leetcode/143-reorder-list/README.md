@@ -1,15 +1,18 @@
-# Reorder List  ·  Medium
+# Reorder List
 
-> Leetcode · [Open problem](https://leetcode.com/problems/reorder-list) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Linked List, Two Pointers, Stack, Recursion
 **Size:** 15 lines · 403 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — find middle + reverse half + merge, all linear
+- **Space:** O(1) — pointer rewiring only, no extra list
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
