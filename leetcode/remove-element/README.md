@@ -1,14 +1,18 @@
-# Remove Element  ·  Unknown
+# Remove Element
 
-> Leetcode · [Open problem](https://leetcode.com/problems/remove-element) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
 **Size:** 10 lines · 234 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — one pass, in-place overwrite
+- **Space:** O(1) — no extra array
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
