@@ -1,15 +1,18 @@
-# Group Anagrams  ·  Medium
+# Group Anagrams
 
-> Leetcode · [Open problem](https://leetcode.com/problems/group-anagrams) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Hash Table, String, Sorting
 **Size:** 15 lines · 359 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n · k log k) — k = max string length, for the sort key
+- **Space:** O(n · k) — grouped strings stored in the map
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
