@@ -1,15 +1,18 @@
-# Top K Frequent Elements  ·  Medium
+# Top K Frequent Elements
 
-> Leetcode · [Open problem](https://leetcode.com/problems/top-k-frequent-elements) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect
 **Size:** 15 lines · 419 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — bucket sort by frequency, no full sort needed
+- **Space:** O(n) — frequency map and buckets
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
