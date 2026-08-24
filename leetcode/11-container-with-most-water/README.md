@@ -1,15 +1,18 @@
-# Container With Most Water  ·  Medium
+# Container With Most Water
 
-> Leetcode · [Open problem](https://leetcode.com/problems/container-with-most-water) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Two Pointers, Greedy
 **Size:** 15 lines · 346 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — one pass, two pointers close in from both ends
+- **Space:** O(1) — only left/right/best tracked
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
