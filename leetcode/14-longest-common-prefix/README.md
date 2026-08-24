@@ -1,6 +1,6 @@
 # Longest Common Prefix  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/longest-common-prefix) · synced 2026-08-21
+> Leetcode · [Open problem](https://leetcode.com/problems/longest-common-prefix) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, String, Trie
