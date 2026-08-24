@@ -1,15 +1,18 @@
-# Longest Common Prefix  ·  Easy
+# Longest Common Prefix
 
-> Leetcode · [Open problem](https://leetcode.com/problems/longest-common-prefix) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, String, Trie
 **Size:** 12 lines · 310 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(S) — S is the sum of all characters across strings
+- **Space:** O(1) — prefix reuses input character data
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
