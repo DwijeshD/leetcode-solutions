@@ -1,15 +1,18 @@
-# Copy List with Random Pointer  ·  Medium
+# Copy List with Random Pointer
 
-> Leetcode · [Open problem](https://leetcode.com/problems/copy-list-with-random-pointer) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Hash Table, Linked List
 **Size:** 14 lines · 303 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — three linear passes over the list
+- **Space:** O(1) extra — no hash map, clones interleaved in place
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
