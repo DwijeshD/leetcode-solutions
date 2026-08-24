@@ -1,6 +1,6 @@
 # Word Pattern  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/word-pattern) · synced 2026-08-18
+> Leetcode · [Open problem](https://leetcode.com/problems/word-pattern) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Hash Table, String
