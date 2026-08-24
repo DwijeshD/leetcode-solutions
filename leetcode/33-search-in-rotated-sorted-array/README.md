@@ -1,6 +1,6 @@
 # Search in Rotated Sorted Array  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/search-in-rotated-sorted-array) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/search-in-rotated-sorted-array) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Binary Search
