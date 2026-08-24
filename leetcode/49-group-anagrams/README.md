@@ -1,6 +1,6 @@
 # Group Anagrams  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/group-anagrams) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/group-anagrams) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Hash Table, String, Sorting
