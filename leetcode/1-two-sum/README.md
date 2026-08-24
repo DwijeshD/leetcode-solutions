@@ -7,6 +7,13 @@
 **Size:** 9 lines · 278 chars
 **Revisions:** 6
 
+## Performance
+
+| Metric | Value | Beats |
+| --- | --- | --- |
+| Runtime | 3 ms | % |
+| Memory | 20.3 MB | % |
+
 ## Complexity
 
 - **Time:** O(n) — single pass through the array with O(1) hash map operations
