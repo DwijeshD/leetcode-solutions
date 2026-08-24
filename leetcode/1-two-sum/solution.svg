@@ -1,97 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
-  <title>Two Sum — hash map walkthrough</title>
-  <desc>N=4; windows 0-0.25,0.25-0.5,0.5-0.75,0.75-1; primary=array row 3 cells pitch 56; aux=hash map panel; moving=i pointer + cell highlight; verdict=return [1,2]</desc>
+<svg viewBox="0 0 560 300" width="560" xmlns="http://www.w3.org/2000/svg">
+  <title>Two Sum — Hash Map Walkthrough</title>
+  <desc>N=4; windows 0-0.25,0.25-0.5,0.5-0.75,0.75-1; primary=array row 4 cells pitch 56; aux=hash map panel; moving=i pointer + cell highlight; verdict=return [0, 2]</desc>
   <rect x="0" y="0" width="560" height="300" rx="10" fill="#0b1310" stroke="#24382c" stroke-width="2"/>
 
   <!-- BAND 1: header -->
-  <text x="24" y="26" font-family="monospace" font-size="13" font-weight="bold" fill="#e9f4ec">Two Sum — hash map</text>
+  <text x="24" y="26" font-family="monospace" font-size="13" font-weight="bold" fill="#e9f4ec">Two Sum — Hash Map</text>
   <text x="536" y="26" text-anchor="end" font-family="monospace" font-size="10" fill="#a3b8ab">O(n) time · O(n) space</text>
   <line x1="20" y1="36" x2="540" y2="36" stroke="#24382c" stroke-width="1"/>
 
-  <!-- BAND 2 left column: array nums = [3, 2, 4] -->
-  <text x="24" y="60" font-family="monospace" font-size="10" fill="#a3b8ab">nums = [3, 2, 4]</text>
-  <text x="48" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">0</text>
+  <!-- BAND 2 left column: the array, 48-wide boxes at pitch 56 -->
+  <text x="24" y="60" font-family="monospace" font-size="10" fill="#a3b8ab">nums = [2, 11, 7, 15]</text>
+  <text x="48"  y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">0</text>
   <text x="104" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">1</text>
   <text x="160" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">2</text>
-  <rect x="24" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
-  <rect x="80" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <text x="216" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">3</text>
+  <rect x="24"  y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="80"  y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
   <rect x="136" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
-  <text x="48" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">3</text>
-  <text x="104" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">2</text>
-  <text x="160" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">4</text>
+  <rect x="192" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <text x="48"  y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">2</text>
+  <text x="104" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">11</text>
+  <text x="160" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">7</text>
+  <text x="216" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">15</text>
 
-  <!-- Active cell highlight -->
+  <!-- Cell highlight rect, translated per step -->
   <g>
-    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;56,0;112,0;112,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+      values="0,0;56,0;112,0;112,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
     <rect x="24" y="106" width="48" height="40" rx="6" fill="none" stroke="#3fae5e" stroke-width="2"/>
   </g>
 
-  <!-- Pointer i -->
+  <!-- Single moving index pointer below array row -->
   <g>
-    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;56,0;112,0;112,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+      values="0,0;56,0;112,0;112,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
     <polygon points="48,152 42,162 54,162" fill="#f5b942"/>
     <text x="48" y="176" text-anchor="middle" font-family="monospace" font-size="10" fill="#f5b942">i</text>
   </g>
 
   <!-- BAND 2 right column: hash map panel + target badge -->
   <rect x="344" y="52" width="196" height="104" rx="8" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
-  <text x="356" y="72" font-family="monospace" font-size="10" fill="#a3b8ab">seen  {num -&gt; index}</text>
+  <text x="356" y="72" font-family="monospace" font-size="10" fill="#a3b8ab">seen  {num -> index}</text>
   <line x1="356" y1="80" x2="528" y2="80" stroke="#24382c" stroke-width="1"/>
   <g opacity="0">
     <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.25" dur="8s" repeatCount="indefinite"/>
-    <text x="364" y="100" font-family="monospace" font-size="12" fill="#63d488">3 -&gt; 0</text>
+    <text x="364" y="100" font-family="monospace" font-size="12" fill="#63d488">2 -> 0</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.5" dur="8s" repeatCount="indefinite"/>
-    <text x="364" y="124" font-family="monospace" font-size="12" fill="#63d488">2 -&gt; 1</text>
+    <text x="364" y="124" font-family="monospace" font-size="12" fill="#63d488">11 -> 1</text>
   </g>
-  <!-- Highlight row in hash map on hit (step 3) -->
+  <!-- Highlight in hash map when match is found at step 3 -->
   <g opacity="0">
     <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.5;0.75" dur="8s" repeatCount="indefinite"/>
-    <rect x="352" y="108" width="180" height="22" rx="5" fill="none" stroke="#3fae5e" stroke-width="2"/>
+    <rect x="356" y="86" width="172" height="20" rx="4" fill="none" stroke="#3fae5e" stroke-width="1.5"/>
   </g>
-  <rect x="344" y="164" width="196" height="26" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
-  <text x="442" y="182" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">target = 6</text>
 
-  <!-- BAND 3: captions -->
+  <!-- Target value badge -->
+  <rect x="344" y="164" width="196" height="26" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <text x="442" y="182" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">target = 9</text>
+
+  <!-- BAND 3: captions per step -->
   <line x1="20" y1="196" x2="540" y2="196" stroke="#24382c" stroke-width="1"/>
   <g opacity="0">
     <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.25" dur="8s" repeatCount="indefinite"/>
-    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=0  n=3  need 6-3=3  -&gt; not in seen, store 3</text>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=0  n=2   need 9-2=7   -> miss, store 2</text>
     <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">seen = {}</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.25;0.5" dur="8s" repeatCount="indefinite"/>
-    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=1  n=2  need 6-2=4  -&gt; not in seen, store 2</text>
-    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">seen = {3: 0}</text>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=1  n=11  need 9-11=-2 -> miss, store 11</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">seen = {2: 0}</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.5;0.75" dur="8s" repeatCount="indefinite"/>
-    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=2  n=4  need 6-4=2  -&gt; HIT at seen[2]=1</text>
-    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">seen = {3: 0, 2: 1}</text>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=2  n=7   need 9-7=2   -> HIT at seen[2]</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">seen = {2: 0, 11: 1}</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.75" dur="8s" repeatCount="indefinite"/>
-    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">pair found at indices 1 and 2</text>
-    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">nums[1] + nums[2] = 2 + 4 = 6</text>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">pair found at indices 0 and 2</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">nums[0] + nums[2] = 2 + 7 = 9</text>
   </g>
 
-  <!-- BAND 4: step rail + verdict badge -->
-  <rect x="24" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
-  <rect x="68" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <!-- BAND 4: step rail and verdict badge -->
+  <rect x="24"  y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <rect x="68"  y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
   <rect x="112" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
   <rect x="156" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
-  <text x="42" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">1</text>
-  <text x="86" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">2</text>
+  <text x="42"  y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">1</text>
+  <text x="86"  y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">2</text>
   <text x="130" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">3</text>
   <text x="174" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">4</text>
   <g>
-    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;44,0;88,0;132,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+      values="0,0;44,0;88,0;132,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
     <rect x="24" y="256" width="36" height="22" rx="5" fill="none" stroke="#3fae5e" stroke-width="1.6"/>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.75" dur="8s" repeatCount="indefinite"/>
     <rect x="340" y="252" width="200" height="32" rx="8" fill="#1a2820" stroke="#63d488" stroke-width="2"/>
-    <text x="440" y="273" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#63d488">return [1, 2]</text>
+    <text x="440" y="273" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#63d488">return [0, 2]</text>
   </g>
 </svg>
