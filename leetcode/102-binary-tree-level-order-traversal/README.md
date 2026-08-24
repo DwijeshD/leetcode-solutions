@@ -1,6 +1,6 @@
 # Binary Tree Level Order Traversal  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/binary-tree-level-order-traversal) · synced 2026-08-16
+> Leetcode · [Open problem](https://leetcode.com/problems/binary-tree-level-order-traversal) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Tree, Breadth-First Search, Binary Tree
