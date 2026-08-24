@@ -1,15 +1,18 @@
-# Linked List Cycle  ·  Easy
+# Linked List Cycle
 
-> Leetcode · [Open problem](https://leetcode.com/problems/linked-list-cycle) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Hash Table, Linked List, Two Pointers, Floyd's Cycle Finding Algorithm
 **Size:** 15 lines · 350 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — Floyd's algorithm, fast pointer bounds the loop
+- **Space:** O(1) — only two pointers, no extra structure
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
