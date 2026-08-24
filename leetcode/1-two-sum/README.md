@@ -9,8 +9,8 @@
 
 ## Complexity
 
-- **Time:** O(n) — single pass with O(1) average-time hash map lookups and insertions
-- **Space:** O(n) — hash map stores at most n elements before finding a pair
+- **Time:** O(n) — single pass through the array with O(1) hash map operations
+- **Space:** O(n) — stores up to n elements in the hash map
 
 ## How it works
 
