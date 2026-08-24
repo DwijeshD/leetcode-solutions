@@ -1,15 +1,18 @@
-# Roman to Integer  ·  Easy
+# Roman to Integer
 
-> Leetcode · [Open problem](https://leetcode.com/problems/roman-to-integer) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Hash Table, Math, String
 **Size:** 14 lines · 254 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — single left-to-right scan of the string
+- **Space:** O(1) — fixed symbol-to-value lookup table
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
