@@ -1,6 +1,6 @@
 # Widest Vertical Area Between Two Points Containing No Points  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Sorting
