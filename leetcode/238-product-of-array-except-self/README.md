@@ -1,6 +1,6 @@
 # Product of Array Except Self  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/product-of-array-except-self) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/product-of-array-except-self) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Prefix Sum
