@@ -1,15 +1,18 @@
-# Koko Eating Bananas  ·  Medium
+# Koko Eating Bananas
 
-> Leetcode · [Open problem](https://leetcode.com/problems/koko-eating-bananas) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Binary Search
 **Size:** 15 lines · 319 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n log m) — n piles scanned per binary-search step over m = max pile
+- **Space:** O(1) — no extra structure beyond the search bounds
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
