@@ -1,15 +1,18 @@
-# Search in Rotated Sorted Array  ·  Medium
+# Search in Rotated Sorted Array
 
-> Leetcode · [Open problem](https://leetcode.com/problems/search-in-rotated-sorted-array) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Binary Search
 **Size:** 15 lines · 375 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(log n) — binary search, halving the search space
+- **Space:** O(1) — three index variables
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
