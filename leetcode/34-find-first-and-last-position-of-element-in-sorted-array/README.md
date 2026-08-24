@@ -1,15 +1,18 @@
-# Find First and Last Position of Element in Sorted Array  ·  Medium
+# Find First and Last Position of Element in Sorted Array
 
-> Leetcode · [Open problem](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Binary Search
 **Size:** 15 lines · 298 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(log n) — two binary searches
+- **Space:** O(1) — index variables only
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
