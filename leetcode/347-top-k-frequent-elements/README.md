@@ -1,6 +1,6 @@
 # Top K Frequent Elements  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/top-k-frequent-elements) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/top-k-frequent-elements) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect
