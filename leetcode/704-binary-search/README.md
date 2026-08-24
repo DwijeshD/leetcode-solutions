@@ -1,15 +1,18 @@
-# Binary Search  ·  Easy
+# Binary Search
 
-> Leetcode · [Open problem](https://leetcode.com/problems/binary-search) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Binary Search
 **Size:** 15 lines · 378 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(log n) — search space halves each step
+- **Space:** O(1) — lo/hi/mid only
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
