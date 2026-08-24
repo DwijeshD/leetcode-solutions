@@ -1,6 +1,6 @@
 # Binary Search  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/binary-search) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/binary-search) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Binary Search
