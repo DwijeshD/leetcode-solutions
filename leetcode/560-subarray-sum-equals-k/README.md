@@ -1,16 +1,19 @@
-# Subarray Sum Equals K  ·  Medium
+# Subarray Sum Equals K
 
-> Leetcode · [Open problem](https://leetcode.com/problems/subarray-sum-equals-k) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Hash Table, Prefix Sum
 **Size:** 15 lines · 375 chars
 **Revisions:** 3
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — one pass with a running prefix-sum hash map
+- **Space:** O(n) — prefix-sum counts stored in the map
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
