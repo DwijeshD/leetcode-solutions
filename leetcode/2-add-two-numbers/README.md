@@ -1,6 +1,6 @@
 # Add Two Numbers  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/add-two-numbers) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/add-two-numbers) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Linked List, Math, Recursion
