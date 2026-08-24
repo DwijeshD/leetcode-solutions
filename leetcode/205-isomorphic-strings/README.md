@@ -1,6 +1,6 @@
 # Isomorphic Strings  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/isomorphic-strings) · synced 2026-08-23
+> Leetcode · [Open problem](https://leetcode.com/problems/isomorphic-strings) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Hash Table, String
