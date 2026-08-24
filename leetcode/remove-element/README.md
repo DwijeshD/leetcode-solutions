@@ -1,6 +1,6 @@
 # Remove Element  ·  Unknown
 
-> Leetcode · [Open problem](https://leetcode.com/problems/remove-element) · synced 2026-08-23
+> Leetcode · [Open problem](https://leetcode.com/problems/remove-element) · synced 2026-08-24
 
 **Language:** python3
 **Size:** 10 lines · 234 chars
