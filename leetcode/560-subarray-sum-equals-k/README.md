@@ -1,6 +1,6 @@
 # Subarray Sum Equals K  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/subarray-sum-equals-k) · synced 2026-08-20
+> Leetcode · [Open problem](https://leetcode.com/problems/subarray-sum-equals-k) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Hash Table, Prefix Sum
