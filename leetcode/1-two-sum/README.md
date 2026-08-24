@@ -1,18 +1,11 @@
 # Two Sum  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/two-sum) · synced 2026-08-23
+> Leetcode · [Open problem](https://leetcode.com/problems/two-sum) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Hash Table
 **Size:** 9 lines · 278 chars
-**Revisions:** 3
-
-## Performance
-
-| Metric | Value | Beats |
-| --- | --- | --- |
-| Runtime | 0 ms | 100% |
-| Memory | 20.57 MB | 17.92% |
+**Revisions:** 4
 
 ## Complexity
 
@@ -36,6 +29,6 @@ class Solution:
                 return [seen[target - n], i]
             seen[n] = i
         return []
-# run-1787529032133
+# run-1787530307972
 
 ```
