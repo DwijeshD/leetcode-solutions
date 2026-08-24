@@ -1,6 +1,6 @@
 # Concatenation of Array  ·  Easy
 
-> Leetcode · [Open problem](https://leetcode.com/problems/concatenation-of-array) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/concatenation-of-array) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Array, Simulation
