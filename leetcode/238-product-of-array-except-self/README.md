@@ -1,15 +1,18 @@
-# Product of Array Except Self  ·  Medium
+# Product of Array Except Self
 
-> Leetcode · [Open problem](https://leetcode.com/problems/product-of-array-except-self) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Array, Prefix Sum
 **Size:** 14 lines · 398 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — two linear passes, no division
+- **Space:** O(1) extra — output array doesn't count
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
