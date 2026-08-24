@@ -1,6 +1,6 @@
 # Copy List with Random Pointer  ·  Medium
 
-> Leetcode · [Open problem](https://leetcode.com/problems/copy-list-with-random-pointer) · synced 2026-08-13
+> Leetcode · [Open problem](https://leetcode.com/problems/copy-list-with-random-pointer) · synced 2026-08-24
 
 **Language:** python3
 **Topics:** Hash Table, Linked List
