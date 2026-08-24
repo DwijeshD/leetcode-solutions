@@ -1,15 +1,18 @@
-# Reverse Linked List  ·  Easy
+# Reverse Linked List
 
-> Leetcode · [Open problem](https://leetcode.com/problems/reverse-linked-list) · synced 2026-08-24
+> Leetcode · synced 2026-08-24
 
 **Language:** python3
-**Topics:** Linked List, Recursion
 **Size:** 15 lines · 345 chars
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — one pass, each node visited once
+- **Space:** O(1) — three pointers, no recursion stack
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
