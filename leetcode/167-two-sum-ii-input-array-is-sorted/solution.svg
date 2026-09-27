@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
+  <title>Two Sum II - Input Array Is Sorted Walkthrough</title>
+  <desc>N=4; windows 0-0.25,0.25-0.5,0.5-0.75,0.75-1; primary=array row 5 cells pitch 56; aux=state panel; moving=lower and upper pointers + cell highlights; verdict=return [2,4]</desc>
+  <rect x="0" y="0" width="560" height="300" rx="10" fill="#0b1310" stroke="#24382c" stroke-width="2"/>
+
+  <!-- BAND 1: header -->
+  <text x="24" y="26" font-family="monospace" font-size="13" font-weight="bold" fill="#e9f4ec">Two Sum II — Two Pointers</text>
+  <text x="536" y="26" text-anchor="end" font-family="monospace" font-size="10" fill="#a3b8ab">O(n) time · O(1) space</text>
+  <line x1="20" y1="36" x2="540" y2="36" stroke="#24382c" stroke-width="1"/>
+
+  <!-- BAND 2 left column: 5 cells pitch 56 (width 48, height 40) -->
+  <text x="24" y="60" font-family="monospace" font-size="10" fill="#a3b8ab">numbers = [1, 2, 4, 6, 10]</text>
+  <text x="48" y="78" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">[1]</text>
+  <text x="104" y="78" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">[2]</text>
+  <text x="160" y="78" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">[3]</text>
+  <text x="216" y="78" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">[4]</text>
+  <text x="272" y="78" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">[5]</text>
+
+  <rect x="24" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="80" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="136" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="192" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="248" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+
+  <text x="48" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">1</text>
+  <text x="104" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">2</text>
+  <text x="160" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">4</text>
+  <text x="216" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">6</text>
+  <text x="272" y="132" text-anchor="middle" font-family="monospace" font-size="15" fill="#e9f4ec">10</text>
+
+  <!-- Cell highlights: one for lower, one for upper -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;0,0;56,0;56,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <rect x="24" y="106" width="48" height="40" rx="6" fill="none" stroke="#3fae5e" stroke-width="2">
+      <animate attributeName="stroke" calcMode="discrete" values="#3fae5e;#3fae5e;#63d488;#63d488" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;-56,0;-56,0;-56,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <rect x="248" y="106" width="48" height="40" rx="6" fill="none" stroke="#3fae5e" stroke-width="2">
+      <animate attributeName="stroke" calcMode="discrete" values="#3fae5e;#3fae5e;#63d488;#63d488" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- upper pointer: above the row, pointing down -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;-56,0;-56,0;-56,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <text x="272" y="92" text-anchor="middle" font-family="monospace" font-size="10" fill="#f5b942">upper</text>
+    <polygon points="272,103 267,95 277,95" fill="#f5b942"/>
+  </g>
+
+  <!-- lower pointer: below the row, pointing up -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;0,0;56,0;56,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <polygon points="48,150 43,158 53,158" fill="#f5b942"/>
+    <text x="48" y="174" text-anchor="middle" font-family="monospace" font-size="10" fill="#f5b942">lower</text>
+  </g>
+
+  <!-- BAND 2 right column: state panel + badge -->
+  <rect x="344" y="52" width="196" height="104" rx="8" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <text x="356" y="72" font-family="monospace" font-size="10" fill="#a3b8ab">state</text>
+  <line x1="356" y1="80" x2="528" y2="80" stroke="#24382c" stroke-width="1"/>
+  <text x="364" y="100" font-family="monospace" font-size="10" fill="#a3b8ab">lower:</text>
+  <text x="364" y="124" font-family="monospace" font-size="10" fill="#a3b8ab">upper:</text>
+  <text x="364" y="148" font-family="monospace" font-size="10" fill="#a3b8ab">total:</text>
+
+  <!-- Step-swapped panel values -->
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.25" dur="8s" repeatCount="indefinite"/>
+    <text x="414" y="100" font-family="monospace" font-size="10" fill="#e9f4ec">0 (val 1)</text>
+    <text x="414" y="124" font-family="monospace" font-size="10" fill="#e9f4ec">4 (val 10)</text>
+    <text x="414" y="148" font-family="monospace" font-size="10" fill="#f5b942">11 &gt; 8</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.25;0.5" dur="8s" repeatCount="indefinite"/>
+    <text x="414" y="100" font-family="monospace" font-size="10" fill="#e9f4ec">0 (val 1)</text>
+    <text x="414" y="124" font-family="monospace" font-size="10" fill="#e9f4ec">3 (val 6)</text>
+    <text x="414" y="148" font-family="monospace" font-size="10" fill="#f5b942">7 &lt; 8</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <text x="414" y="100" font-family="monospace" font-size="10" fill="#e9f4ec">1 (val 2)</text>
+    <text x="414" y="124" font-family="monospace" font-size="10" fill="#e9f4ec">3 (val 6)</text>
+    <text x="414" y="148" font-family="monospace" font-size="10" fill="#63d488">8 == 8</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.75" dur="8s" repeatCount="indefinite"/>
+    <text x="414" y="100" font-family="monospace" font-size="10" fill="#63d488">1 (val 2)</text>
+    <text x="414" y="124" font-family="monospace" font-size="10" fill="#63d488">3 (val 6)</text>
+    <text x="414" y="148" font-family="monospace" font-size="10" fill="#63d488">8 (found)</text>
+  </g>
+
+  <rect x="344" y="164" width="196" height="26" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <text x="442" y="182" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">target = 8</text>
+
+  <!-- BAND 3: captions -->
+  <line x1="20" y1="196" x2="540" y2="196" stroke="#24382c" stroke-width="1"/>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.25" dur="8s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">lower=0, upper=4 -&gt; total = 1 + 10 = 11</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">total &gt; target (11 &gt; 8) -&gt; decrement upper</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.25;0.5" dur="8s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">lower=0, upper=3 -&gt; total = 1 + 6 = 7</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">total &lt; target (7 &lt; 8) -&gt; increment lower</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">lower=1, upper=3 -&gt; total = 2 + 6 = 8</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">total == target -&gt; convert to 1-based [lower+1, upper+1]</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.75" dur="8s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#63d488">target sum 8 matched by indices 2 and 4</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">numbers[1] + numbers[3] = 2 + 6 = 8</text>
+  </g>
+
+  <!-- BAND 4: step rail + verdict -->
+  <rect x="24" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <rect x="68" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <rect x="112" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <rect x="156" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <text x="42" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">1</text>
+  <text x="86" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">2</text>
+  <text x="130" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">3</text>
+  <text x="174" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">4</text>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;44,0;88,0;132,0" keyTimes="0;0.25;0.5;0.75" dur="8s" repeatCount="indefinite"/>
+    <rect x="24" y="256" width="36" height="22" rx="5" fill="none" stroke="#3fae5e" stroke-width="1.6"/>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.75" dur="8s" repeatCount="indefinite"/>
+    <rect x="340" y="252" width="200" height="32" rx="8" fill="#1a2820" stroke="#63d488" stroke-width="2"/>
+    <text x="440" y="273" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#63d488">return [2, 4]</text>
+  </g>
+</svg>

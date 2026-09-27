@@ -15,8 +15,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n) — each step moves either the lower or upper pointer inward, scanning at most n elements
+- **Space:** O(1) — constant extra space using only two pointer variables
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
