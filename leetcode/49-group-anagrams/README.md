@@ -1,9 +1,18 @@
-# Group Anagrams
+# Group Anagrams  ·  Medium
 
-> Leetcode · synced 2026-08-24
+> Leetcode · [Open problem](https://leetcode.com/problems/group-anagrams) · synced 2026-09-27
 
 **Language:** python3
-**Size:** 15 lines · 359 chars
+**Topics:** Array, Hash Table, String, Sorting
+**Size:** 3 lines · 89 chars
+**Revisions:** 2
+
+## Performance
+
+| Metric | Value | Beats |
+| --- | --- | --- |
+| Runtime | 11 ms | 82.83% |
+| Memory | 21.67 MB | 97.78% |
 
 ## Complexity
 
@@ -19,19 +28,7 @@
 See [`Solution.py`](./Solution.py).
 
 ```python
-
-class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        keys = {}
-
-        for i in range(len(strs)):
-            word = strs[i]
-            key = "".join(sorted(word))
-
-            if key in keys:
-                keys[key].append(word)
-            else:
-                keys[key] = [word]
-
-        return list(keys.values())
+class Solution:
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+        
 ```
