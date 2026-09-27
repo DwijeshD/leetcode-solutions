@@ -16,8 +16,8 @@
 
 ## Complexity
 
-- **Time:** O(n · k log k) — k = max string length, for the sort key
-- **Space:** O(n · k) — grouped strings stored in the map
+- **Time:** O(N * K log K) — where N is the number of strings and K is the maximum string length, sorting each string to form the key
+- **Space:** O(N * K) — storing all strings and their sorted keys in the hash map
 
 ## How it works
 

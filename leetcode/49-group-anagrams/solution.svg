@@ -1,1 +1,143 @@
-<svg viewBox="0 0 560 300" width="560" xmlns="http://www.w3.org/2000/svg"><rect width="560" height="300" rx="10" fill="#0b1310" stroke="#24382c"/><text x="20" y="30" fill="#e9f4ec" font-family="monospace" font-size="15" font-weight="bold">Group Anagrams</text><g><rect x="109" y="110" width="52" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="2"><animate attributeName="stroke" calcMode="discrete" keyTimes="0;0.0000;0.2500;0.2500;0.5000;0.5000;0.7500;0.7500;1.0000;1" values="#24382c;#3fae5e;#3fae5e;#24382c;#24382c;#24382c;#24382c;#24382c;#24382c;#24382c" dur="9s" repeatCount="indefinite"/></rect><text x="135" y="135" fill="#e9f4ec" font-family="monospace" font-size="13" text-anchor="middle">"eat"</text></g><g><rect x="167" y="110" width="52" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="2"><animate attributeName="stroke" calcMode="discrete" keyTimes="0;0.0000;0.2500;0.2500;0.5000;0.5000;0.7500;0.7500;1.0000;1" values="#24382c;#24382c;#24382c;#3fae5e;#3fae5e;#24382c;#24382c;#24382c;#24382c;#24382c" dur="9s" repeatCount="indefinite"/></rect><text x="193" y="135" fill="#e9f4ec" font-family="monospace" font-size="13" text-anchor="middle">"tea"</text></g><g><rect x="225" y="110" width="52" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="2"><animate attributeName="stroke" calcMode="discrete" keyTimes="0;0.0000;0.2500;0.2500;0.5000;0.5000;0.7500;0.7500;1.0000;1" values="#24382c;#24382c;#24382c;#24382c;#24382c;#3fae5e;#3fae5e;#24382c;#24382c;#24382c" dur="9s" repeatCount="indefinite"/></rect><text x="251" y="135" fill="#e9f4ec" font-family="monospace" font-size="13" text-anchor="middle">"tan"</text></g><g><rect x="283" y="110" width="52" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="2"><animate attributeName="stroke" calcMode="discrete" keyTimes="0;0.0000;0.2500;0.2500;0.5000;0.5000;0.7500;0.7500;1.0000;1" values="#24382c;#24382c;#24382c;#3fae5e;#3fae5e;#24382c;#24382c;#24382c;#24382c;#24382c" dur="9s" repeatCount="indefinite"/></rect><text x="309" y="135" fill="#e9f4ec" font-family="monospace" font-size="13" text-anchor="middle">"ate"</text></g><g><rect x="341" y="110" width="52" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="2"><animate attributeName="stroke" calcMode="discrete" keyTimes="0;0.0000;0.2500;0.2500;0.5000;0.5000;0.7500;0.7500;1.0000;1" values="#24382c;#24382c;#24382c;#24382c;#24382c;#3fae5e;#3fae5e;#24382c;#24382c;#24382c" dur="9s" repeatCount="indefinite"/></rect><text x="367" y="135" fill="#e9f4ec" font-family="monospace" font-size="13" text-anchor="middle">"nat"</text></g><g><rect x="399" y="110" width="52" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="2"><animate attributeName="stroke" calcMode="discrete" keyTimes="0;0.0000;0.2500;0.2500;0.5000;0.5000;0.7500;0.7500;1.0000;1" values="#24382c;#24382c;#24382c;#24382c;#24382c;#24382c;#24382c;#3fae5e;#3fae5e;#24382c" dur="9s" repeatCount="indefinite"/></rect><text x="425" y="135" fill="#e9f4ec" font-family="monospace" font-size="13" text-anchor="middle">"bat"</text></g><g transform="translate(135,96)"><path d="M 0 0 L -6 -10 L 6 -10 Z" fill="#f5b942"/><animateTransform attributeName="transform" type="translate" calcMode="discrete" additive="replace" keyTimes="0.0000;0.2500;0.5000;0.7500;1" values="135,96;193,96;251,96;425,96;425,96" dur="9s" repeatCount="indefinite"/></g><text x="280" y="200" fill="#a3b8ab" font-family="monospace" font-size="13" opacity="0">"eat" -&gt; sorted key "aet"<animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.0000;0.2500;1" values="0;1;0;0" dur="9s" repeatCount="indefinite"/></text><text x="280" y="200" fill="#a3b8ab" font-family="monospace" font-size="13" opacity="0">"tea" and "ate" share key "aet"<animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.2500;0.5000;1" values="0;1;0;0" dur="9s" repeatCount="indefinite"/></text><text x="280" y="200" fill="#a3b8ab" font-family="monospace" font-size="13" opacity="0">"tan" and "nat" share key "ant"<animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.5000;0.7500;1" values="0;1;0;0" dur="9s" repeatCount="indefinite"/></text><text x="280" y="200" fill="#a3b8ab" font-family="monospace" font-size="13" opacity="0">"bat" -&gt; its own key "abt"<animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.7500;1.0000;1" values="0;1;0;0" dur="9s" repeatCount="indefinite"/></text><text x="280" y="250" fill="#63d488" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle" opacity="0">[[eat,tea,ate],[tan,nat],[bat]]<animate attributeName="opacity" calcMode="discrete" keyTimes="0;0.85;0.95;1" values="0;0;1;1" dur="9s" repeatCount="indefinite"/></text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560">
+  <title>Group Anagrams — hash map walkthrough</title>
+  <desc>N=5; windows 0-0.2,0.2-0.4,0.4-0.6,0.6-0.8,0.8-1; primary=array 5 cells pitch 56; aux=hash map panel; moving=pointer i + cell highlight; verdict=return 3 groups</desc>
+  <rect x="0" y="0" width="560" height="300" rx="10" fill="#0b1310" stroke="#24382c" stroke-width="2"/>
+
+  <!-- BAND 1: header -->
+  <text x="24" y="26" font-family="monospace" font-size="13" font-weight="bold" fill="#e9f4ec">Group Anagrams — hash map</text>
+  <text x="536" y="26" text-anchor="end" font-family="monospace" font-size="10" fill="#a3b8ab">O(N·K log K) time · O(N·K) space</text>
+  <line x1="20" y1="36" x2="540" y2="36" stroke="#24382c" stroke-width="1"/>
+
+  <!-- BAND 2 left column: strings array (5 cells, pitch 56) -->
+  <text x="24" y="60" font-family="monospace" font-size="10" fill="#a3b8ab">strs = ["eat","tea","tan","ate","bat"]</text>
+  <text x="48" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">0</text>
+  <text x="104" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">1</text>
+  <text x="160" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">2</text>
+  <text x="216" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">3</text>
+  <text x="272" y="98" text-anchor="middle" font-family="monospace" font-size="9" fill="#a3b8ab">4</text>
+
+  <rect x="24" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="80" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="136" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="192" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <rect x="248" y="106" width="48" height="40" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+
+  <text x="48" y="131" text-anchor="middle" font-family="monospace" font-size="13" fill="#e9f4ec">eat</text>
+  <text x="104" y="131" text-anchor="middle" font-family="monospace" font-size="13" fill="#e9f4ec">tea</text>
+  <text x="160" y="131" text-anchor="middle" font-family="monospace" font-size="13" fill="#e9f4ec">tan</text>
+  <text x="216" y="131" text-anchor="middle" font-family="monospace" font-size="13" fill="#e9f4ec">ate</text>
+  <text x="272" y="131" text-anchor="middle" font-family="monospace" font-size="13" fill="#e9f4ec">bat</text>
+
+  <!-- Highlight box translating with pointer i -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;56,0;112,0;168,0;224,0" keyTimes="0;0.2;0.4;0.6;0.8" dur="10s" repeatCount="indefinite"/>
+    <rect x="24" y="106" width="48" height="40" rx="6" fill="none" stroke="#3fae5e" stroke-width="2"/>
+  </g>
+
+  <!-- Pointer i below array row -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;56,0;112,0;168,0;224,0" keyTimes="0;0.2;0.4;0.6;0.8" dur="10s" repeatCount="indefinite"/>
+    <polygon points="48,152 42,162 54,162" fill="#f5b942"/>
+    <text x="48" y="176" text-anchor="middle" font-family="monospace" font-size="10" fill="#f5b942">i</text>
+  </g>
+
+  <!-- BAND 2 right column: hash map panel -->
+  <rect x="344" y="52" width="196" height="104" rx="8" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <text x="356" y="72" font-family="monospace" font-size="10" fill="#a3b8ab">map  {sorted key -&gt; list}</text>
+  <line x1="356" y1="80" x2="528" y2="80" stroke="#24382c" stroke-width="1"/>
+
+  <!-- Row 1: key "aet" list evolutions -->
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.2" dur="10s" repeatCount="indefinite"/>
+    <text x="356" y="100" font-family="monospace" font-size="11" fill="#63d488">"aet": [eat]</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.2;0.6" dur="10s" repeatCount="indefinite"/>
+    <text x="356" y="100" font-family="monospace" font-size="11" fill="#63d488">"aet": [eat, tea]</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.6" dur="10s" repeatCount="indefinite"/>
+    <text x="356" y="100" font-family="monospace" font-size="11" fill="#63d488">"aet": [eat, tea, ate]</text>
+  </g>
+
+  <!-- Row 2: key "ant" added at step 3 -->
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.4" dur="10s" repeatCount="indefinite"/>
+    <text x="356" y="124" font-family="monospace" font-size="11" fill="#63d488">"ant": [tan]</text>
+  </g>
+
+  <!-- Row 3: key "abt" added at step 5 -->
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.8" dur="10s" repeatCount="indefinite"/>
+    <text x="356" y="148" font-family="monospace" font-size="11" fill="#63d488">"abt": [bat]</text>
+  </g>
+
+  <!-- Auxiliary Badge: live group count -->
+  <rect x="344" y="164" width="196" height="26" rx="6" fill="#1a2820" stroke="#24382c" stroke-width="1.5"/>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.4" dur="10s" repeatCount="indefinite"/>
+    <text x="442" y="182" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">groups = 1</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.4;0.8" dur="10s" repeatCount="indefinite"/>
+    <text x="442" y="182" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">groups = 2</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.8" dur="10s" repeatCount="indefinite"/>
+    <text x="442" y="182" text-anchor="middle" font-family="monospace" font-size="12" fill="#f5b942">groups = 3</text>
+  </g>
+
+  <!-- BAND 3: captions (exactly two lines per step) -->
+  <line x1="20" y1="196" x2="540" y2="196" stroke="#24382c" stroke-width="1"/>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.2" dur="10s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=0  w="eat"  sorted="aet" -&gt; new key, create list</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">map["aet"] = ["eat"]</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.2;0.4" dur="10s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=1  w="tea"  sorted="aet" -&gt; key exists, append word</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">map["aet"] = ["eat", "tea"]</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.4;0.6" dur="10s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=2  w="tan"  sorted="ant" -&gt; new key, create list</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">map["ant"] = ["tan"]</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.6;0.8" dur="10s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=3  w="ate"  sorted="aet" -&gt; key exists, append word</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">map["aet"] = ["eat", "tea", "ate"]</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.8" dur="10s" repeatCount="indefinite"/>
+    <text x="24" y="218" font-family="monospace" font-size="11" fill="#f5b942">i=4  w="bat"  sorted="abt" -&gt; new key, return map values</text>
+    <text x="24" y="238" font-family="monospace" font-size="10" fill="#a3b8ab">all 5 strings partitioned into 3 anagram groups</text>
+  </g>
+
+  <!-- BAND 4: step rail (5 chips) + verdict badge -->
+  <rect x="24" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <rect x="68" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <rect x="112" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <rect x="156" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+  <rect x="200" y="256" width="36" height="22" rx="5" fill="#1a2820" stroke="#24382c" stroke-width="1"/>
+
+  <text x="42" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">1</text>
+  <text x="86" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">2</text>
+  <text x="130" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">3</text>
+  <text x="174" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">4</text>
+  <text x="218" y="271" text-anchor="middle" font-family="monospace" font-size="10" fill="#a3b8ab">5</text>
+
+  <!-- Active chip indicator -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete" values="0,0;44,0;88,0;132,0;176,0" keyTimes="0;0.2;0.4;0.6;0.8" dur="10s" repeatCount="indefinite"/>
+    <rect x="24" y="256" width="36" height="22" rx="5" fill="none" stroke="#3fae5e" stroke-width="1.6"/>
+  </g>
+
+  <!-- Verdict badge on final step -->
+  <g opacity="0">
+    <animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;0.8" dur="10s" repeatCount="indefinite"/>
+    <rect x="340" y="252" width="200" height="32" rx="8" fill="#1a2820" stroke="#63d488" stroke-width="2"/>
+    <text x="440" y="273" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#63d488">return 3 anagram groups</text>
+  </g>
+</svg>
