@@ -8,8 +8,12 @@
 
 ## Complexity
 
-- **Time:** _not analyzed yet_
-- **Space:** _not analyzed yet_
+- **Time:** O(n^2) — expanding around each of the 2n-1 centers takes up to O(n) time
+- **Space:** O(1) — only pointer variables and boundary indices are stored
+
+## How it works
+
+![How it works](./solution.svg)
 
 ## Solution
 
